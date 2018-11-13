@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Евгения Бондарева](https://up.htmlacademy.ru/htmlcss/23/user/381677).
-* Наставник: `Неизвестно`.
+* Наставник: [Елена Забара](https://htmlacademy.ru/profile/lena___elena).
 
 ---
 
