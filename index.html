@@ -5,8 +5,95 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+    <header class="main_header">
+      <h1 class='visibility_hidden'>Интернет-магазин гаджетов</h1>
+      <a class='main_header_logo'>Device</a>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+      <nav class="main_navigation">
+        <ul class="user_navigation">
+          <li class="search"><input type="text"></li>
+          <li class="login_link"><a href="#">Войти</a></li>
+          <li class="compare_link"><a href="#">Сравнить</a></li>
+          <li class="cart_link"><a href="#">Корзина</a></li>
+        </ul>
+        <ul class="site_navigation">
+          <li class="catalog_link"><a href="catalog.html">Каталог товаров</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="warranty.html">Гарантия</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="popular_items">
+        <h2 class="visibility_hidden">Популярные товары</h2>
+        <ul class="popular_items_list">
+          <li class="vr"><h3><a href="catalog.html">Виртуальная реальность</a></h3></li>
+          <li class="monopod"><h3><a href="catalog.html">Моноподы для селфи</a></h3></li>
+          <li class="camera"><h3><a href="catalog.html">Экшн-камеры</a></h3></li>
+          <li class="bracelet"><h3><a href="catalog.html">Фитнес-браслеты</a></h3></li>
+          <li class="watch"><h3><a href="catalog.html">Умные часы</a></h3></li>
+          <li class="drone"><h3><a href="catalog.html">Квадрокоптеры</a></h3></li>
+        </ul>
+      </section>
+      <nav class="sub_navigation">
+        <ul class="services_navigation">
+          <li class="delivery_link"><a href="#">Доставка</a></li>
+          <li class="warranty_link"><a href="#">Гарантия</a></li>
+          <li class="credit_link"><a href="#">Кредит</a></li>
+        </ul>
+      </nav>
+      <section class="delivery">
+        <h2>Доставка</h2>
+        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+        совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+      </section>
+      <section class="info">
+        <h2>О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. <br>
+          Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими
+          транспортными компаниями:
+        </p>
+        <ul class="delivery_companies">
+          <li>Деловые Линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="info.html">Подробнее о нас</a>
+      </section>
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехавв наш в офис. Заодно, вы можете проверить работоспособность
+          покупки. Всякое бывает.
+        </p>
+        <a href="https://yandex.ru/maps"><img src="http://placehold.it/560x222" alt="офис магазина на карте"></a>
+        <a href="write_us.html">Напишите нам</a>
+      </section>
+    </main>
+    <footer class="main_footer">
+      <a class='main_footer_logo'>Device</a>
+      <nav class="main_footer_navigation">
+        <ul class="user_navigation">
+          <li class="login_link"><a href="#">Войти</a></li>
+          <li class="compare_link"><a href="#">Сравнить</a></li>
+          <li class="cart_link"><a href="#">Корзина</a></li>
+        </ul>
+      </nav>
+      <p class="footer_address">г.Москва, ул.Строителей, 15</p>
+      <nav class="footer_navigation">
+        <ul class="services_navigation">
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Кредит</a></li>
+        </ul>
+      </nav>
+      <p class="footer_call">Тел.: +7(495)495-95-95</p>
+      <ul class="footer_social">
+        <li><a href="#" class="social_button">Фейсбук</a></li>
+        <li><a href="#" class="social_button">Инстаграмм</a></li>
+        <li><a href="#" class="social_button">Твитер</a></li>
+      </ul>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">HtmlAcademy</a>
+    </footer>
   </body>
 </html>
