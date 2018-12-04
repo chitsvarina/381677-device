@@ -8,16 +8,29 @@
     <header class="main_header">
       <h1 class='visibility_hidden'>Интернет-магазин гаджетов</h1>
       <a class='main_header_logo'>Device</a>
-
+      <form action="#">
+        <input type="text" aria-label="Ввод запроса на поиск информации на сайте">
+        <button type="button" name="button">Найти</button>
+      </form>
       <nav class="main_navigation">
-        <ul class="user_navigation">
-          <li class="search"><input type="text"></li>
+        <ul class="auth_navigation">
           <li class="login_link"><a href="#">Войти</a></li>
+        </ul>
+        <ul class="user_actions_navigation">
           <li class="compare_link"><a href="#">Сравнить</a></li>
           <li class="cart_link"><a href="#">Корзина</a></li>
         </ul>
         <ul class="site_navigation">
-          <li class="catalog_link"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="catalog_link"><a href="catalog.html">Каталог товаров</a>
+            <ul class="catalog_link_submenu">
+              <li class="vr_link"><a href="#">Виртуальная реальность</a></li>
+              <li class="bracelet_link"><a href="#">Фитнес-браслеты</a></li>
+              <li class="drone_link"><a href="#">Квадрокоптеры</a></li>
+              <li class="monopod_link"><a href="#">Моноподы для селфи</a></li>
+              <li class="watch_link"><a href="#">Умные часы</a></li>
+              <li class="camera_link"><a href="#">Экшн-камеры</a></li>
+            </ul>
+          </li>
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="warranty.html">Гарантия</a></li>
           <li><a href="contacts.html">Контакты</a></li>
@@ -28,12 +41,42 @@
       <section class="popular_items">
         <h2 class="visibility_hidden">Популярные товары</h2>
         <ul class="popular_items_list">
-          <li class="vr"><h3><a href="catalog.html">Виртуальная реальность</a></h3></li>
-          <li class="monopod"><h3><a href="catalog.html">Моноподы для селфи</a></h3></li>
-          <li class="camera"><h3><a href="catalog.html">Экшн-камеры</a></h3></li>
-          <li class="bracelet"><h3><a href="catalog.html">Фитнес-браслеты</a></h3></li>
-          <li class="watch"><h3><a href="catalog.html">Умные часы</a></h3></li>
-          <li class="drone"><h3><a href="catalog.html">Квадрокоптеры</a></h3></li>
+          <li class="vr">
+            <a href="catalog.html">
+              <h3>Виртуальная реальность</h3>
+              <img src="img/popular-1.svg" width="97" height="55" alt="Очки виртуальной реальности">
+            </a>
+          </li>
+          <li class="monopod">
+            <a href="catalog.html">
+              <h3>Моноподы для селфи</h3>
+              <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
+            </a>
+          </li>
+          <li class="camera">
+            <a href="catalog.html">
+              <h3>Экшн-камеры</h3>
+              <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
+            </a>
+          </li>
+          <li class="bracelet">
+            <a href="catalog.html">
+              <h3>Фитнес-браслеты</h3>
+              <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
+            </a>
+          </li>
+          <li class="watch">
+            <a href="catalog.html">
+              <h3>Умные часы</h3>
+              <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
+            </a>
+          </li>
+          <li class="drone">
+            <a href="catalog.html">
+              <h3>Квадрокоптеры</h3>
+              <img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
+            </a>
+          </li>
         </ul>
       </section>
       <nav class="sub_navigation">
@@ -47,6 +90,16 @@
         <h2>Доставка</h2>
         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду
         совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+      </section>
+      <section class="warranty">
+        <h2>Гарантия</h2>
+        <p>Если из-за возгарания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый.
+          Товар, не дом, конечно же.</p>
+      </section>
+      <section class="credit">
+        <h2>Кредит</h2>
+        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+        условия кредита. Выгодные для нашего банка, разумеется.</p>
       </section>
       <section class="info">
         <h2>О нас</h2>
@@ -66,15 +119,17 @@
         <p>Вы можете забрать товар сами, заехавв наш в офис. Заодно, вы можете проверить работоспособность
           покупки. Всякое бывает.
         </p>
-        <a href="https://yandex.ru/maps"><img src="http://placehold.it/560x222" alt="офис магазина на карте"></a>
+        <a href="https://yandex.ru/maps"><img src="img/map-jpg.jpg" alt="офис магазина на карте"></a>
         <a href="write_us.html">Напишите нам</a>
       </section>
     </main>
     <footer class="main_footer">
       <a class='main_footer_logo'>Device</a>
       <nav class="main_footer_navigation">
-        <ul class="user_navigation">
+        <ul class="auth_navigation">
           <li class="login_link"><a href="#">Войти</a></li>
+        </ul>
+        <ul class="user_actions_navigation">
           <li class="compare_link"><a href="#">Сравнить</a></li>
           <li class="cart_link"><a href="#">Корзина</a></li>
         </ul>
