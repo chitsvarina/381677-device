@@ -2,11 +2,12 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>HTML Academy: Девайс</title>
 </head>
 <body>
   <header class="main_header">
     <h1 class='visibility_hidden'>Каталог товаров</h1>
+    <a class='main_header_logo'>Device</a>
     <form action="#">
       <input type="text" aria-label="Ввод запроса на поиск информации на сайте">
       <button type="button" name="button">Найти</button>
@@ -51,20 +52,19 @@
         <fieldset>
           <legend>Стоимость</legend>
           <input type="range" min="0" max="180" step="20" value="0,10" />
-
         </fieldset>
       </form>
     </section>
     <section class="catalog">
       <p>Сортировка:</p>
       <ul class="sort_by">
-        <li href="#">По цене</li>
-        <li href="#">По типу</li>
-        <li href="#">По популярности</li>
+        <li><a href="#">По цене</a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По популярности</a></li>
       </ul>
       <ul class="sort_up_down">
-        <li href="#" aria-label="Сортировать по возрастанию"></li>
-        <li href="#" aria-label="Сортировать по убыванию"></li>
+        <li><a href="#" aria-label="Сортировать по возрастанию"></a></li>
+        <li><a href="#" aria-label="Сортировать по убыванию"></a></li>
       </ul>
       <ul class="catalog_items">
           <li class="item">
