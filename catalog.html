@@ -6,15 +6,15 @@
 </head>
 <body>
   <header class="main_header">
-    <h1 class='visibility_hidden'>Каталог товаров</h1>
-    <a class='main_header_logo'>Device</a>
+    <a class='main_header_logo' href="index.html">Device</a>
     <form action="#">
       <input type="text" aria-label="Ввод запроса на поиск информации на сайте">
       <button type="button" name="button">Найти</button>
     </form>
     <nav class="main_navigation">
       <ul class="auth_navigation">
-        <li class="login_link"><a href="#">Войти</a></li>
+        <li class="login_link"><a href="#">Валентин Петухов</a></li>
+        <li class="exit_link"><a href="#">Выйти</a></li>
       </ul>
       <ul class="user_actions_navigation">
         <li class="compare_link"><a href="#">Сравнить</a></li>
@@ -36,9 +36,9 @@
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
     </nav>
+  <h1>Моноподы для селфи</h1>
   </header>
   <main>
-    <h2>Моноподы для селфи</h2>
     <nav class="sub_navigation">
       <ul class="path_navigation">
         <li class="main_link"><a href="index.html">Главная</a></li>
@@ -47,16 +47,56 @@
       </ul>
     </nav>
     <section class="filter">
-      <p>Фильтр:</p>
-      <form action="" class="set_filter" method="get">
+      <h2 class="catalog_heading">Фильтр:</h2>
+      <form class="set_filter" method="post">
         <fieldset>
           <legend>Стоимость</legend>
-          <input type="range" min="0" max="180" step="20" value="0,10" />
+          <input type="range" min="0" max="180" step="20"/>
         </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li class="filter_option">
+              <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_black" id="filter_black">
+              <label for="filter_black">Черный</label>
+            </li>
+            <li class="filter_option">
+              <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_white" id="filter_white">
+              <label for="filter_white">Белый</label>
+            </li>
+            <li class="filter_option">
+              <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_blue" id="filter_blue">
+              <label for="filter_blue">Синий</label>
+            </li>
+            <li class="filter_option">
+              <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_red" id="filter_red">
+              <label for="filter_red">Красный</label>
+            </li>
+            <li class="filter_option">
+              <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_pink" id="filter_pink">
+              <label for="filter_pink">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+            <li class="filter_option">
+              <input class="filter_input_radio visibility_hidden" type="radio" name="filter_yes" id="filter_yes">
+              <label for="filter_yes">Есть</label>
+            </li>
+            <li class="filter_option">
+              <input class="filter_input_radio visibility_hidden" type="radio" name="filter_no" id="filter_no">
+              <label for="filter_no">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="filter_button button">Показать</button>
       </form>
     </section>
     <section class="catalog">
-      <p>Сортировка:</p>
+      <h2 class="visibility_hidden">Список товаров</h2>
+      <p class="catalog_heading">Сортировка:</p>
       <ul class="sort_by">
         <li><a href="#">По цене</a></li>
         <li><a href="#">По типу</a></li>
@@ -67,25 +107,30 @@
         <li><a href="#" aria-label="Сортировать по убыванию"></a></li>
       </ul>
       <ul class="catalog_items">
-          <li class="item">
+          <li class="item"  tabindex="0">
             <img src="img/item-1-jpg.jpg" width="360" height="380" alt="Любительская селфи-палка">
-            <h3>Любительская селфи-палка</h3>
-            <span>500p</span>
+            <a href="#"><h3>Любительская селфи-палка</h3></a>
+            <span class="item_price" tabindex="0">500p</span>
+            <a href="#" class="item_to_cart">В корзину</a>
           </li>
-          <li class="item">
+          <li class="item"  tabindex="0">
             <img src="img/item-2-jpg.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-            <h3>Профессиональная селфи-палка</h3>
-            <span>1500p</span>
+            <a href="#"><h3>Профессиональная селфи-палка</h3></a>
+            <span class="item_price" tabindex="0">1500p</span>
+            <a href="#" class="item_to_cart">В корзину</a>
           </li>
-          <li class="item">
+          <li class="item"  tabindex="0">
             <img src="img/item-3-jpg.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-            <h3>Непотопляемая селфи-палка</h3>
-            <span>2500p</span>
+            <a href="#"><h3>Непотопляемая селфи-палка</h3></a>
+            <span class="item_price" tabindex="0">2500p</span>
+            <a href="#" class="item_to_cart">В корзину</a>
           </li>
-          <li class="item">
+          <li class="item"  tabindex="0">
             <img src="img/item-4-jpg.jpg" width="360" height="380" alt="Селфи-палка следуй за мной">
-            <h3>Селфи-палка следуй за мной</h3>
-            <span>4900p</span>
+            <a href="#"><h3>Селфи-палка следуй за мной</h3></a>
+            <span class="item_price" tabindex="0">4900p</span>
+            <a href="#" class="item_to_cart">В корзину</a>
+            <span class="item_new" >New</span>
           </li>
       </ul>
       <nav class="catalog_veiw_navigation">
@@ -103,10 +148,8 @@
     <a class='main_footer_logo'>Device</a>
     <nav class="main_footer_navigation">
       <ul class="auth_navigation">
-        <li class="login_link">
-          <a href="#">Валентин Петухов</a>
-          <a href="#">Выйти</a>
-        </li>
+        <li class="login_link"><a href="#">Валентин Петухов</a></li>
+        <li class="exit_link"><a href="#">Выйти</a></li>
       </ul>
       <ul class="user_actions_navigation">
         <li class="compare_link"><a href="#">Сравнить</a></li>
@@ -123,9 +166,9 @@
     </nav>
     <p class="footer_call">Тел.: +7(495)495-95-95</p>
     <ul class="footer_social">
-      <li><a href="#" class="social_button">Фейсбук</a></li>
-      <li><a href="#" class="social_button">Инстаграмм</a></li>
-      <li><a href="#" class="social_button">Твитер</a></li>
+      <li><a href="#" class="social_button" aria-label="Страница интернет-магазина Девайс на Фейсбуке"></a></li>
+      <li><a href="#" class="social_button" aria-label="Профиль интернет-магазина Девайс в Инстаграмм"></a></li>
+      <li><a href="#" class="social_button" aria-label="Страница интернет-магазина Девайс в Твиттере"></a></li>
     </ul>
     <a href="https://htmlacademy.ru/intensive/htmlcss">HtmlAcademy</a>
   </footer>

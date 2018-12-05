@@ -90,7 +90,7 @@
           покупки. Всякое бывает.
         </p>
         <a href="https://yandex.ru/maps"><img src="img/map-jpg.jpg" alt="Офис компании по адресу г.Москва, ул.Строителей, д.15"></a>
-        <a href="write_us.html">Напишите нам</a>
+        <a href="feedback.html">Напишите нам</a>
       </section>
     </main>
     <footer class="main_footer">
@@ -116,9 +116,27 @@
       <ul class="footer_social">
         <li><a href="#" class="social_button" aria-label="Страница интернет-магазина Девайс на Фейсбуке"></a></li>
         <li><a href="#" class="social_button" aria-label="Профиль интернет-магазина Девайс в Инстаграмм"></a></li>
-        <li><a href="#" class="social_button" aria-label="Страница интернет-магазина Девайс в Твиттере">Твитер</a></li>
+        <li><a href="#" class="social_button" aria-label="Страница интернет-магазина Девайс в Твиттере"></a></li>
       </ul>
       <a href="https://htmlacademy.ru/intensive/htmlcss">HtmlAcademy</a>
     </footer>
+    <section class="popup_feedback">
+      <h2 class="visibility_hidden">Форма обратной связи</h2>
+      <form method="post" class="feedback_form">
+        <label for="user_name_field">Ваше имя:</label>
+        <input type="text" name="user_name_field" id="user_name_field" value="" placeholder="Имя Фамилия" aria-label="Поле для ввода вашего имени и фамилии">
+        <label for="user_email_field">Ваш e-mail:</label>
+        <input type="text" name="user_email_field" id="user_email_field" value="" placeholder="Ваш e-mail" aria-label="Поле для ввода адреса вашей электронной почты">
+        <label for="user_message_field">Текст письма:</label>
+        <textarea name="user_message_field" id="user_message_field" rows="8" cols="80" placeholder="В свободной форме" aria-label="Поле для ввода вашего сообщения"></textarea>
+        <button type="submit" class="feedback_send button">Отправить</button>
+        <button type="button" class="feedback_close button" aria-label="Закрыть форму обратной связи"></button>
+      </form>
+    </section>
+    <section class="popup_map">
+      <h2>Офис компании на карте</h2>
+      <img src="img/map-jpg@2x.jpg" alt="">
+      <button type="button" class="feedback_close button" aria-label="Закрыть карту"></button>
+    </section>
   </body>
 </html>
