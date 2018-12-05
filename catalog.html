@@ -45,18 +45,27 @@
         <li class="monopods_link"><a>Моноподы для селфи</a></li>
       </ul>
     </nav>
-    <section class="filter"></section>
+    <section class="filter">
+      <p>Фильтр:</p>
+      <form action="" class="set_filter" method="get">
+        <fieldset>
+          <legend>Стоимость</legend>
+          <input type="range" min="0" max="180" step="20" value="0,10" />
+
+        </fieldset>
+      </form>
+    </section>
     <section class="catalog">
-      <nav class="sort_by">
-        <p>Сортировка:</p>
-        <a href="#">По цене</a>
-        <a href="#">По типу</a>
-        <a href="#">По популярности</a>
-      </nav>
-      <nav class="sort_up_down">
-        <a href="#" aria-label="Сортировать по возрастанию"></a>
-        <a href="#" aria-label="Сортировать по убыванию"></a>
-      </nav>
+      <p>Сортировка:</p>
+      <ul class="sort_by">
+        <li href="#">По цене</li>
+        <li href="#">По типу</li>
+        <li href="#">По популярности</li>
+      </ul>
+      <ul class="sort_up_down">
+        <li href="#" aria-label="Сортировать по возрастанию"></li>
+        <li href="#" aria-label="Сортировать по убыванию"></li>
+      </ul>
       <ul class="catalog_items">
           <li class="item">
             <img src="img/item-1-jpg.jpg" width="360" height="380" alt="Любительская селфи-палка">
