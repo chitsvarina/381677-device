@@ -1,0 +1,298 @@
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('../fonts/ofont.ru_gilroy-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gilroylight';
+    src: url('../fonts/ofont.ru_gilroy_light-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+html{
+  box-sizing: border-box;
+}
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+body{
+  margin: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+  background-color: #ffffff;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+.visibility_hidden{
+  display: none;
+
+}
+.slim_container{
+  width: 1440px;
+  padding: 0px 140px;
+/*  margin: auto;*/
+}
+.wide_container{
+  width: 1440px;
+  background-color: #e5e5e5;
+}
+.main_header{
+  width: 1160px;
+  height: 299px;
+  padding: 0px 60px;
+  background-color:#f0c52e;
+  opacity: 0.5;
+}
+.main_header_logo, .main_footer_logo{
+  font-family: 'gilroyextrabold';
+  font-size: 50px;
+  text-transform: uppercase;
+  color:#000000;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 37px;
+  margin-top: 5px; /*подбор PP, в макете верхний отступ 20px*/
+  margin-left: 57px; /*подбор PP, в макете 59-60*/
+}
+.site_navigation a,
+.services_navigation a{ /*свойства общие для заголовков меню верхнего уровня*/
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 3.6px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #000000;
+}
+.site_navigation_submenu a{ /*свойтва общие для большинства ссылок внутри главного меню*/
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 0.15px;
+  text-align: left;
+  text-transform: none;
+  color: #000000;
+}
+
+.vr_link a, /*уникальные свойства для заголовков меню нижнего уровня*/
+.bracelet_link a,
+.drone_link a,
+.monopod_link a,
+.watch_link a,
+.camera_link a{
+  line-height: 36px;
+}
+h2{
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: 0.47px;
+  text-align: left;
+  color: #000000;
+}
+/*.popular_items_list>li{
+  width: 160px;
+  height: 160px;
+  background-color: #f0c52e;
+  opacity: 0.5;
+}*/
+.popular_items_list h3,
+.feedback_form label{
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.18px;
+  text-align: left;
+  color: #000000;
+}
+/*.delivery p,   будут наследоваться от body
+.warranty p,
+.credit p,
+.info p,
+.contacts p{
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color: #464646;
+}*/
+.delivery_companies li{
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0.18px;
+  text-align: left;
+  color: #000000;
+}
+.services_navigation a,
+.info a,
+.contacts a{
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 3.6px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.services_navigation{
+  border-right: 7px solid #000000;
+}
+.info a{
+  display: block;
+  height: 40px;
+  width: 260px;
+  line-height: 40px;
+}
+.main_footer{
+  height: 323px;
+  width: 1440px;
+  background-color: #464646;
+  padding: 0px 139px;
+}
+.main_footer_logo{
+  color: #ffc600;
+  margin-left: 0px;
+}
+
+.main_footer_navigation a{
+  color:rgba(255, 255, 255, 0.7);
+}
+
+.footer_navigation a,
+.footer_address,
+.footer_call{
+  color:#ffffff;
+}
+.feedback_form input[placeholder],
+.feedback_form textarea[placeholder] {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  text-align: left;
+  color: rgba(70, 70, 70, 0.4);
+}
+/*Index - interactive links*/
+.main_header_logo:hover{
+  color:#666666;
+}
+.main_header_logo:focus{
+  color:#b2b2b2;
+}
+.auth_navigation a:hover,
+.user_actions_navigation a:hover,
+.site_navigation a:hover{
+  color:rgba(0, 0, 0, 0.6);
+}
+.auth_navigation a:focus,
+.user_actions_navigation a:focus,
+.site_navigation a:focus{
+  color:rgba(0, 0, 0, 0.3);
+}
+.info a{
+
+}
+/*-------Catalog page-------*/
+.filter{
+  width: 468px;
+  height: 1287px;
+  background-color: #eeeeee;
+  padding-left: 199px;
+  padding-right: 67px;
+}
+.filter h2,
+.catalog p,
+.catalog_veiw_navigation a{
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #000000;
+}
+.set_filter fieldset{
+  border:none;
+}
+.set_filter legend,.catalog_items h3{
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  text-align: left;
+  color: #000000;
+}
+.item_price{
+  font-family: 'gilroylight';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  text-align: right;
+  color: #464646;
+}
+.item_to_cart{
+  width: 200px;
+  height: 40px;
+  display: block;
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.item_to_compare{
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 36px;
+  font-weight: 300;
+  letter-spacing: 0.13px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+.item_new{
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  padding-top:18px;
+}
+.catalog_veiw_navigation .next_pages{
+    color: rgba(0, 0, 0, 0.3);
+}
+/*Catalog - interactive links*/
+
+/*Flexbox*/
+html,body{
+  min-width: 1440px;
+/*  min-height: 2795px;*/
+}
+.main_header{
+  margin-top: -50px;
+  margin-bottom: 480px;
+}
