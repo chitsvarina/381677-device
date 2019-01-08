@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <title>HTML Academy: Девайс</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <div class="slim_container">
+<body class="catalog_page">
+  <div class="container">
     <a class='main_header_logo' href="index.html">Device</a>
     <header class="main_header">
       <form action="#">
@@ -115,46 +115,45 @@
           <li class="item"  tabindex="0">
             <img src="img/item-1-jpg.jpg" width="360" height="380" alt="Любительская селфи-палка">
             <a href="#"><h3>Любительская селфи-палка</h3></a>
-            <span class="item_price" tabindex="0">500p</span>
+            <span class="item_price" tabindex="0">500 pуб.</span>
             <a href="#" class="item_to_cart">В корзину</a>
             <a href="#" class="item_to_compare">Добавить к сравнению</a>
           </li>
           <li class="item"  tabindex="0">
             <img src="img/item-2-jpg.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
             <a href="#"><h3>Профессиональная селфи-палка</h3></a>
-            <span class="item_price" tabindex="0">1500p</span>
+            <span class="item_price" tabindex="0">1500 pуб.</span>
             <a href="#" class="item_to_cart">В корзину</a>
             <a href="#" class="item_to_compare">Добавить к сравнению</a>
           </li>
           <li class="item"  tabindex="0">
             <img src="img/item-3-jpg.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
             <a href="#"><h3>Непотопляемая селфи-палка</h3></a>
-            <span class="item_price" tabindex="0">2500p</span>
+            <span class="item_price" tabindex="0">2500 pуб.</span>
             <a href="#" class="item_to_cart">В корзину</a>
             <a href="#" class="item_to_compare">Добавить к сравнению</a>
           </li>
-          <li class="item"  tabindex="0">
+          <li class="item item-new"  tabindex="0">
             <img src="img/item-4-jpg.jpg" width="360" height="380" alt="Селфи-палка следуй за мной">
             <a href="#"><h3>Селфи-палка следуй за мной</h3></a>
-            <span class="item_price" tabindex="0">4900p</span>
+            <span class="item_price" tabindex="0">4900 pуб.</span>
             <a href="#" class="item_to_cart">В корзину</a>
             <a href="#" class="item_to_compare">Добавить к сравнению</a>
-            <span class="item_new" >New</span>
           </li>
       </ul>
       <nav class="catalog_veiw_navigation">
-        <a href="#">Назад</a>
-        <ul>
-          <li><a href="#">1</a></li>
-          <li><a href="#" class="next_pages">2</a></li>
-          <li><a href="#" class="next_pages">3</a></li>
+        <a class="prev_page" href="#">Назад</a>
+        <ul class="catalog_veiw_pages">
+          <li><a class="active_page">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
         </ul>
-        <a href="#">Вперед</a>
+        <a class="next_page" href="#">Вперед</a>
       </nav>
     </section>
   </main>
   <footer class="main_footer">
-    <a class='main_footer_logo'>Device</a>
+    <a class='main_footer_logo' href="index.html">Device</a>
     <nav class="main_footer_navigation">
       <ul class="auth_navigation">
         <li class="login_link"><a href="#">Валентин Петухов</a></li>

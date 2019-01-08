@@ -1,20 +1,22 @@
 @font-face {
     font-family: 'gilroyextrabold';
-    src: url('../fonts/ofont.ru_gilroy-webfont.woff2') format('woff2');
-    font-weight: normal;
+    src: url('../fonts/ofont.ru_gilroy-webfont.woff2') format('woff2'),
+         url('../fonts/ofont.ru_gilroy_extrabold-webfont.woff') format('woff');
+    font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: 'gilroylight';
-    src: url('../fonts/ofont.ru_gilroy_light-webfont.woff2') format('woff2');
-    font-weight: normal;
+    src: url('../fonts/ofont.ru_gilroy_light-webfont.woff2') format('woff2'),
+         url('../fonts/ofont.ru_gilroy_light-webfont.woff');
+    font-weight: 300;
     font-style: normal;
 }
 html{
   box-sizing: border-box;
 }
 *, *::before, *::after{
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 body{
   margin: 0;
@@ -35,21 +37,20 @@ ul{
   display: none;
 
 }
-.slim_container{
-  width: 1440px;
-  padding: 0px 140px;
-/*  margin: auto;*/
+.container{
+  width: 1200px;
+  padding: 0px 20px;
+  margin: 0px auto;
 }
-.wide_container{
-  width: 1440px;
-  background-color: #e5e5e5;
-}
+
 .main_header{
-  width: 1160px;
-  height: 299px;
+  width: 100%;
+  min-height: 299px;
   padding: 0px 60px;
-  background-color:#f0c52e;
-  opacity: 0.5;
+  background-color:rgba(240, 197, 46, 0.5);
+}
+.catalog_page .main_header{
+    min-height: 186px;
 }
 .main_header_logo, .main_footer_logo{
   font-family: 'gilroyextrabold';
@@ -92,7 +93,7 @@ ul{
 .camera_link a{
   line-height: 36px;
 }
-h2{
+.delivery h2{
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
@@ -104,8 +105,7 @@ h2{
 /*.popular_items_list>li{
   width: 160px;
   height: 160px;
-  background-color: #f0c52e;
-  opacity: 0.5;
+  background-color:rgba(240, 197, 46, 0.5);
 }*/
 .popular_items_list h3,
 .feedback_form label{
@@ -130,6 +130,11 @@ h2{
   text-align: left;
   color: #464646;
 }*/
+.services{
+  min-height: 288px;
+  background-color: #e5e5e5;
+  padding-left: 140px;
+}
 .delivery_companies li{
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 16px;
@@ -160,20 +165,18 @@ h2{
   line-height: 40px;
 }
 .main_footer{
-  height: 323px;
-  width: 1440px;
+  min-height: 323px;
   background-color: #464646;
   padding: 0px 139px;
 }
 .main_footer_logo{
-  color: #ffc600;
+  color: rgb(255, 198, 0);
   margin-left: 0px;
 }
 
 .main_footer_navigation a{
   color:rgba(255, 255, 255, 0.7);
 }
-
 .footer_navigation a,
 .footer_address,
 .footer_call{
@@ -189,11 +192,16 @@ h2{
   color: rgba(70, 70, 70, 0.4);
 }
 /*Index - interactive links*/
-.main_header_logo:hover{
+.catalog_page .main_header_logo:hover{
   color:#666666;
 }
-.main_header_logo:focus{
+.catalog_page .main_header_logo:focus{
   color:#b2b2b2;
+}
+.auth_navigation a:visited,
+.user_actions_navigation a:visited,
+.site_navigation a:visited{
+  color:#000000;
 }
 .auth_navigation a:hover,
 .user_actions_navigation a:hover,
@@ -201,14 +209,41 @@ h2{
   color:rgba(0, 0, 0, 0.6);
 }
 .auth_navigation a:focus,
+.auth_navigation a:active,
 .user_actions_navigation a:focus,
-.site_navigation a:focus{
+.user_actions_navigation a:active,
+.site_navigation a:focus,
+.site_navigation a:active{
+  color:rgba(0, 0, 0, 0.3);
+}
+.popular_items_list h3:focus,
+.popular_items_list h3:active{
   color:rgba(0, 0, 0, 0.3);
 }
 .info a{
-
+}
+.main_footer_navigation a:visited{
+  color:rgba(255, 255, 255, 0.7);
+}
+.main_footer_navigation a:hover{
+  color:#ffffff;
+}
+.main_footer_navigation a:focus,
+.main_footer_navigation a:active{
+  color:rgba(255, 255, 255, 0.3);
+}
+.footer_navigation a:hover{
+  color:rgba(255, 255, 255, 0.6);
+}
+.footer_navigation a:focus,
+.footer_navigation a:active{
+  color:rgba(255, 255, 255, 0.3);
 }
 /*-------Catalog page-------*/
+.path_navigation a{
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .filter{
   width: 468px;
   height: 1287px;
@@ -218,7 +253,9 @@ h2{
 }
 .filter h2,
 .catalog p,
-.catalog_veiw_navigation a{
+.catalog_veiw_navigation .prev_page,
+.catalog_veiw_navigation .next_page,
+.catalog_veiw_pages a{
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -230,13 +267,17 @@ h2{
 .set_filter fieldset{
   border:none;
 }
-.set_filter legend,.catalog_items h3{
+.set_filter legend,
+.catalog_items h3{
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.18px;
   text-align: left;
   color: #000000;
+}
+.sort_by a{
+  color: rgba(0, 0, 0, 0.3);
 }
 .item_price{
   font-family: 'gilroylight';
@@ -282,10 +323,61 @@ h2{
   border: 2px solid rgba(0, 0, 0, 0.2);
   padding-top:18px;
 }
-.catalog_veiw_navigation .next_pages{
+.catalog_veiw_pages a{
     color: rgba(0, 0, 0, 0.3);
 }
+.catalog_veiw_pages .active_page{
+    color: rgb(0, 0, 0);
+}
+
+
 /*Catalog - interactive links*/
+.path_navigation a:visited{
+  color: rgba(0, 0, 0, 0.3);
+}
+.path_navigation a:hover{
+  color: rgba(0, 0, 0, 0.6);
+}
+.path_navigation a:focus,
+.path_navigation a:active{
+  color: rgba(0, 0, 0, 0.1);
+}
+.sort_by a:visited{
+  color: rgba(0, 0, 0, 0.3);
+}
+.sort_by a:hover{
+  color: rgba(0, 0, 0, 0.6);
+}
+.sort_by a:focus,
+.sort_by a:active{
+  color: rgb(0, 0, 0);
+}
+.catalog_veiw_pages a:visited{
+    color: rgba(0, 0, 0, 0.3);
+}
+.catalog_veiw_pages a:focus,
+.catalog_veiw_pages a:active{
+    color: rgb(0, 0, 0);
+}
+.catalog_veiw_navigation .prev_page:visited,
+.catalog_veiw_navigation .next_page:visited{
+  color: rgb(0, 0, 0);
+}
+.catalog_veiw_navigation .prev_page:focus,
+.catalog_veiw_navigation .prev_page:active,
+.catalog_veiw_navigation .next_page:focus,
+.catalog_veiw_navigation .next_page:active{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog_page .main_footer_logo:hover{
+  color: rgba(255, 198, 0, 0.6);
+}
+.catalog_page .main_footer_logo:focus,
+.catalog_page .main_footer_logo:active{
+  color: rgba(255, 198, 0, 0.3);
+}
+
 
 /*Flexbox*/
 html,body{
