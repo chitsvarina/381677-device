@@ -32,9 +32,21 @@ a{
 }
 ul{
   list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.hide_it{
+  display: none;
 }
 .visibility_hidden{
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 
 }
 .container{
@@ -52,7 +64,8 @@ ul{
 .catalog_page .main_header{
     min-height: 186px;
 }
-.main_header_logo, .main_footer_logo{
+.main_header_logo,
+.main_footer_logo{
   font-family: 'gilroyextrabold';
   font-size: 50px;
   text-transform: uppercase;
@@ -74,7 +87,9 @@ ul{
   text-transform: uppercase;
   color: #000000;
 }
-.site_navigation_submenu a{ /*свойтва общие для большинства ссылок внутри главного меню*/
+.site_navigation_submenu a,/*свойтва общие для большинства ссылок*/
+.auth_navigation a,
+.user_actions_navigation a{
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -93,7 +108,11 @@ ul{
 .camera_link a{
   line-height: 36px;
 }
-.delivery h2{
+.delivery h2,
+.warranty h2,
+.credit h2,
+.info h2,
+.contacts h2{
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
@@ -101,6 +120,7 @@ ul{
   letter-spacing: 0.47px;
   text-align: left;
   color: #000000;
+  margin: 0;
 }
 /*.popular_items_list>li{
   width: 160px;
@@ -131,9 +151,9 @@ ul{
   color: #464646;
 }*/
 .services{
-  min-height: 288px;
-  background-color: #e5e5e5;
-  padding-left: 140px;
+  min-height: 388px;
+  background-image: linear-gradient(to bottom, transparent 100px, #e5e5e5 100px);
+  margin-bottom: 94px;
 }
 .delivery_companies li{
   font-family: 'gilroyextrabold', Arial, sans-serif;
@@ -155,7 +175,7 @@ ul{
   text-transform: uppercase;
   color: #000000;
 }
-.services_navigation{
+.services .services_navigation{
   border-right: 7px solid #000000;
 }
 .info a{
@@ -167,11 +187,12 @@ ul{
 .main_footer{
   min-height: 323px;
   background-color: #464646;
-  padding: 0px 139px;
 }
 .main_footer_logo{
   color: rgb(255, 198, 0);
   margin-left: 0px;
+  margin-right: 660px;
+  padding: 0;
 }
 
 .main_footer_navigation a{
@@ -279,6 +300,9 @@ ul{
 .sort_by a{
   color: rgba(0, 0, 0, 0.3);
 }
+.sort_by .active_status{
+  color: rgb(0, 0, 0);
+}
 .item_price{
   font-family: 'gilroylight';
   font-size: 16px;
@@ -342,15 +366,18 @@ ul{
 .path_navigation a:active{
   color: rgba(0, 0, 0, 0.1);
 }
-.sort_by a:visited{
+/*.sort_by a:visited{
   color: rgba(0, 0, 0, 0.3);
-}
+}*/
 .sort_by a:hover{
   color: rgba(0, 0, 0, 0.6);
 }
 .sort_by a:focus,
 .sort_by a:active{
   color: rgb(0, 0, 0);
+}
+.catalog_items .item_to_compare:visited{
+  
 }
 .catalog_veiw_pages a:visited{
     color: rgba(0, 0, 0, 0.3);
@@ -381,10 +408,140 @@ ul{
 
 /*Flexbox*/
 html,body{
-  min-width: 1440px;
-/*  min-height: 2795px;*/
+  min-width: 1200px;
+  min-height: 2795px;
 }
 .main_header{
   margin-top: -50px;
   margin-bottom: 480px;
+  padding-top: 42px; /*по макету внутренний отступ 50px*/
+}
+.user_navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 37px;
+}
+.user_navigation form{
+  width:540px;
+}
+.auth_navigation{
+  width: 280px;
+  margin: 0;
+}
+.user_actions_navigation{
+  width: 220px;
+  margin: 0;
+}
+.user_actions_navigation>li{
+    display: inline-block;
+}
+
+.site_navigation>ul{
+  display: flex;
+}
+.site_navigation_catalog{
+  width: 540px;
+}
+.site_navigation_delivery{
+  width: 160px;
+}
+.site_navigation_warranty{
+  width: 220px;
+}
+.site_navigation_contacts{
+  width: 120px;
+}
+.popular_items_list{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 84px;
+}
+.popular_item{
+  width: 160px;
+  height: 90px;
+}
+.services_container{
+  display: flex;
+}
+.services .sub_navigation{
+  width: 285px;
+}
+.services .services_navigation{
+  min-height: 319px;
+  padding-top: 80px;
+}
+.services .delivery,
+.services .warranty,
+.services .credit{
+  width: 875px;
+  padding-top: 75px;
+  padding-left: 117px;
+  min-height: 319px;
+}
+.brands>ul{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 93px;
+}
+.info_container{
+  display: flex;
+  justify-content: space-between;
+  min-height: 648px;
+}
+.info{
+  width: 460px;
+}
+.contacts{
+  width: 560px;
+}
+.main_footer .container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 65px;
+}
+.main_footer_navigation{
+  width: 320px;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer_navigation .services_navigation{
+  display: flex;
+  justify-content: space-between;
+  min-width: 430px;
+
+}
+.footer_navigation{
+  margin-top: 34px;
+}
+.footer_address{
+  margin-top: 32px;
+  margin-right: 170px;
+  margin-left: 3px;
+}
+.footer_call{
+  min-width: 350px;
+  margin-top: 32px;
+  margin-left: auto;
+}
+.footer_social>li{
+  display: inline-block;
+}
+/*Decoration*/
+.auth_navigation .login_link{
+  padding-left: 27px;
+  position: relative;
+}
+.auth_navigation .login_link::before{
+  content: "";
+  width: 13px;
+  height: 12px;
+  position: absolute;
+  top:9px;
+  left:0px;
+  background-image: url(../img/user.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
