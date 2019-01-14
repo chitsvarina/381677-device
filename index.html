@@ -10,13 +10,13 @@
   <body>
     <div class="container">
       <a class='main_header_logo'>Device</a>
+      <h1 class='visibility_hidden'>Интернет-магазин гаджетов</h1>
       <header class="main_header">
-        <h1 class='visibility_hidden'>Интернет-магазин гаджетов</h1>
-        <form action="#">
-          <input type="text" aria-label="Ввод запроса на поиск информации на сайте">
-          <button type="button" name="button">Найти</button>
-        </form>
-        <nav class="main_navigation">
+        <nav class="user_navigation">
+          <form action="#">
+            <input type="text" aria-label="Ввод запроса на поиск информации на сайте">
+            <button type="button" name="button">Найти</button>
+          </form>
           <ul class="auth_navigation">
             <li class="login_link"><a href="#">Войти</a></li>
           </ul>
@@ -24,8 +24,10 @@
             <li class="compare_link"><a href="#">Сравнить</a></li>
             <li class="cart_link"><a href="#">Корзина</a></li>
           </ul>
-          <ul class="site_navigation">
-            <li><a href="catalog.html">Каталог товаров</a>
+        </nav>
+        <nav class="site_navigation">
+          <ul>
+            <li class="site_navigation_catalog"><a href="catalog.html">Каталог товаров</a>
               <ul class="site_navigation_submenu">
                 <li class="vr_link"><a href="#">Виртуальная реальность</a></li>
                 <li class="bracelet_link"><a href="#">Фитнес-браслеты</a></li>
@@ -35,9 +37,9 @@
                 <li class="camera_link"><a href="#">Экшн-камеры</a></li>
               </ul>
             </li>
-            <li><a href="delivery.html">Доставка</a></li>
-            <li><a href="warranty.html">Гарантия</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
+            <li class="site_navigation_delivery"><a href="delivery.html">Доставка</a></li>
+            <li class="site_navigation_warranty"><a href="warranty.html">Гарантия</a></li>
+            <li class="site_navigation_contacts"><a href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
       </header>
@@ -55,28 +57,32 @@
         </section>
     </div>
     <section class="services">
-        <nav class="sub_navigation">
-          <ul class="services_navigation">
-            <li class="delivery_link"><a href="#">Доставка</a></li>
-            <li class="warranty_link"><a href="#">Гарантия</a></li>
-            <li class="credit_link"><a href="#">Кредит</a></li>
-          </ul>
-        </nav>
-        <section class="delivery">
-          <h2>Доставка</h2>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-          совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        </section>
-        <section class="warranty">
-          <h2>Гарантия</h2>
-          <p>Если из-за возгарания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый.
-            Товар, не дом, конечно же.</p>
-        </section>
-        <section class="credit">
-          <h2>Кредит</h2>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-          условия кредита. Выгодные для нашего банка, разумеется.</p>
-        </section>
+      <div class="container">
+        <div class="services_container">
+          <nav class="sub_navigation">
+            <ul class="services_navigation">
+              <li class="delivery_link"><a href="#">Доставка</a></li>
+              <li class="warranty_link"><a href="#">Гарантия</a></li>
+              <li class="credit_link"><a href="#">Кредит</a></li>
+            </ul>
+          </nav>
+          <section class="delivery">
+            <h2>Доставка</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+            совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </section>
+          <section class="warranty hide_it">
+            <h2>Гарантия</h2>
+            <p>Если из-за возгарания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.</p>
+          </section>
+          <section class="credit hide_it">
+            <h2>Кредит</h2>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+            условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </section>
+        </div>
+      </div>
     </section>
       <div class="container">
         <section class="brands">
@@ -111,55 +117,59 @@
             </li>
           </ul>
         </section>
-        <section class="info">
-          <h2>О нас</h2>
-          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. <br>
-            Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими
-            транспортными компаниями:
-          </p>
-          <ul class="delivery_companies">
-            <li>Деловые Линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
-          </ul>
-          <a href="info.html">Подробнее о нас</a>
-        </section>
-        <section class="contacts">
-          <h2>Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав наш в офис. Заодно, вы можете проверить работоспособность
-            покупки. Всякое бывает.
-          </p>
-          <a href="https://yandex.ru/maps"><img src="img/map-jpg.jpg" alt="Офис компании по адресу г.Москва, ул.Строителей, д.15"></a>
-          <a href="feedback.html">Напишите нам</a>
-        </section>
+        <div class="info_container">
+          <section class="info">
+            <h2>О нас</h2>
+            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. <br>
+              Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими
+              транспортными компаниями:
+            </p>
+            <ul class="delivery_companies">
+              <li>Деловые Линии</li>
+              <li>Автотрейдинг</li>
+              <li>ЖелДорЭкспедиция</li>
+            </ul>
+            <a href="info.html">Подробнее о нас</a>
+          </section>
+          <section class="contacts">
+            <h2>Контакты</h2>
+            <p>Вы можете забрать товар сами, заехав наш в офис. Заодно, вы можете проверить работоспособность
+              покупки. Всякое бывает.
+            </p>
+            <a href="https://yandex.ru/maps"><img src="img/map-jpg.jpg" alt="Офис компании по адресу г.Москва, ул.Строителей, д.15"></a>
+            <a href="feedback.html">Напишите нам</a>
+          </section>
+        </div>
       </div>
     </main>
       <footer class="main_footer">
-        <a class='main_footer_logo'>Device</a>
-        <nav class="main_footer_navigation">
-          <ul class="auth_navigation">
-            <li class="login_link"><a href="#">Войти</a></li>
+        <div class="container">
+          <a class='main_footer_logo'>Device</a>
+          <nav class="main_footer_navigation">
+            <ul class="auth_navigation">
+              <li class="login_link"><a href="#">Войти</a></li>
+            </ul>
+            <ul class="user_actions_navigation">
+              <li class="compare_link"><a href="#">Сравнить</a></li>
+              <li class="cart_link"><a href="#">Корзина</a></li>
+            </ul>
+          </nav>
+          <p class="footer_address">г.Москва, ул.Строителей, 15</p>
+          <nav class="footer_navigation">
+            <ul class="services_navigation">
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <p class="footer_call">Тел.: +7(495)495-95-95</p>
+          <ul class="footer_social">
+            <li><a href="#" class="social_button" aria-label="Страница интернет-магазина Девайс на Фейсбуке"></a></li>
+            <li><a href="#" class="social_button" aria-label="Профиль интернет-магазина Девайс в Инстаграмм"></a></li>
+            <li><a href="#" class="social_button" aria-label="Страница интернет-магазина Девайс в Твиттере"></a></li>
           </ul>
-          <ul class="user_actions_navigation">
-            <li class="compare_link"><a href="#">Сравнить</a></li>
-            <li class="cart_link"><a href="#">Корзина</a></li>
-          </ul>
-        </nav>
-        <p class="footer_address">г.Москва, ул.Строителей, 15</p>
-        <nav class="footer_navigation">
-          <ul class="services_navigation">
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Кредит</a></li>
-          </ul>
-        </nav>
-        <p class="footer_call">Тел.: +7(495)495-95-95</p>
-        <ul class="footer_social">
-          <li><a href="#" class="social_button" aria-label="Страница интернет-магазина Девайс на Фейсбуке"></a></li>
-          <li><a href="#" class="social_button" aria-label="Профиль интернет-магазина Девайс в Инстаграмм"></a></li>
-          <li><a href="#" class="social_button" aria-label="Страница интернет-магазина Девайс в Твиттере"></a></li>
-        </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HtmlAcademy</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">HtmlAcademy</a>
+        </div>
       </footer>
 
     <section class="popup_feedback">
