@@ -352,17 +352,28 @@ ul{
 .sort_by a:active{
   color: rgb(0, 0, 0);
 }
+.catalog_items .item_to_compare:visited{
+  color: rgba(0, 0, 0, 0.5);
+}
+.catalog_items .item_to_compare:hover{
+  color: rgb(0, 0, 0);
+}
+.catalog_items .item_to_compare:focus,
+.catalog_items .item_to_compare:active{
+  color: rgba(0, 0, 0, 0.2);
+}
+
 .catalog_veiw_pages a:visited{
     color: rgba(0, 0, 0, 0.3);
+}
+.catalog_veiw_pages a:hover{
+    color: rgba(0, 0, 0, 0.6);
 }
 .catalog_veiw_pages a:focus,
 .catalog_veiw_pages a:active{
     color: rgb(0, 0, 0);
 }
-.catalog_veiw_navigation .prev_page:visited,
-.catalog_veiw_navigation .next_page:visited{
-  color: rgb(0, 0, 0);
-}
+
 .catalog_veiw_navigation .prev_page:focus,
 .catalog_veiw_navigation .prev_page:active,
 .catalog_veiw_navigation .next_page:focus,
