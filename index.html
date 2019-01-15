@@ -43,6 +43,26 @@
           </ul>
         </nav>
       </header>
+      <section class="slider">
+        <input type="radio" id="slide_monopod">
+        <input type="radio" id="slide_watch">
+        <input type="radio" id="slide_drone">
+        <div class="content">
+          <p class="slogan">Делай селфи, <br> как Бен Стиллер!</p>
+          <p class="description">Самая длинная палка для селфи доступна в нашем магазине.<br>
+            Восемь (Восемь, Карл) метров длинной и весом всего 5 килограмм.</p>
+          <a href="info.html">Подробнее</a>
+          <table>
+            <tr><td>8,5 м</td><td>5 кг</td><td>Карбон</td></tr>
+            <tr><th>Длина палки</th><th>Вес палки</th><th>Материал</th></tr>
+          </table>
+          <div class="slider_controls">
+            <label for="slide_monopod"></label>
+            <label for="slide_watch"></label>
+            <label for="slide_drone"></label>
+          </div>
+        </div>
+      </section>
       <main>
         <section class="popular_items">
           <h2 class="visibility_hidden">Популярные товары</h2>
@@ -175,19 +195,25 @@
     <section class="popup_feedback">
       <h2 class="visibility_hidden">Форма обратной связи</h2>
       <form method="post" class="feedback_form">
-        <label for="user_name_field">Ваше имя:</label>
-        <input type="text" name="user_name_field" id="user_name_field" value="" placeholder="Имя Фамилия" aria-label="Поле для ввода вашего имени и фамилии">
-        <label for="user_email_field">Ваш e-mail:</label>
-        <input type="text" name="user_email_field" id="user_email_field" value="" placeholder="Ваш e-mail" aria-label="Поле для ввода адреса вашей электронной почты">
-        <label for="user_message_field">Текст письма:</label>
-        <textarea name="user_message_field" id="user_message_field" rows="8" cols="80" placeholder="В свободной форме" aria-label="Поле для ввода вашего сообщения"></textarea>
+        <p class="user_name_group">
+          <label for="user_name_field">Ваше имя:</label><br>
+          <input type="text" name="user_name_field" id="user_name_field" value="" placeholder="Имя Фамилия" aria-label="Поле для ввода вашего имени и фамилии">
+        </p>
+        <p class="user_email_group">
+          <label for="user_email_field">Ваш e-mail:</label><br>
+          <input type="text" name="user_email_field" id="user_email_field" value="" placeholder="email@example.com" aria-label="Поле для ввода адреса вашей электронной почты">
+        </p>
+        <p class="user_message_group">
+          <label for="user_message_field">Текст письма:</label><br>
+          <textarea name="user_message_field" id="user_message_field" rows="8" cols="80" placeholder="В свободной форме" aria-label="Поле для ввода вашего сообщения"></textarea>
+        </p>
         <button type="submit" class="feedback_send button">Отправить</button>
-        <button type="button" class="feedback_close button" aria-label="Закрыть форму обратной связи"></button>
       </form>
+      <button type="button" class="feedback_close button" aria-label="Закрыть форму обратной связи"></button>
     </section>
     <section class="popup_map">
-      <h2>Офис компании на карте</h2>
-      <img src="img/map-jpg@2x.jpg" alt="">
+      <h2 class="visibility_hidden">Офис компании на карте</h2>
+      <img src="img/map-big-jpg.jpg" alt="Офис компании на карте">
       <button type="button" class="feedback_close button" aria-label="Закрыть карту"></button>
     </section>
   </body>

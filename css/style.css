@@ -108,6 +108,37 @@ ul{
 .camera_link a{
   line-height: 36px;
 }
+.slider{
+  min-width: 100%;
+  min-height: 500px;
+  padding-left: 90px;
+  padding-right: 60px;
+  background-image: url(../img/slider-1-png.jpg);
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.slider>input{
+  display: none;
+}
+.slider .content{
+  position: relative;
+}
+.slider_controls{
+  position: absolute;
+  top:200px;
+  right: 50px;
+}
+.slider_controls>label::before{
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  border: 1px solid #000000;
+}
 .delivery h2,
 .warranty h2,
 .credit h2,
@@ -212,6 +243,45 @@ ul{
   text-align: left;
   color: rgba(70, 70, 70, 0.4);
 }
+/*feedback popup*/
+.popup_feedback{
+  width: 960px;
+  margin: auto;
+  min-height: 553px;
+  padding: 22px;
+  box-shadow: 0px 10px 20px 0 rgba(4,6,6,0.2);
+}
+.feedback_form{
+  width: 760px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#user_name_field,
+#user_email_field{
+  width: 360px;
+  height: 50px;
+  border: none;
+  background-color: #f2f2f2;
+  padding-left: 20px;
+}
+#user_message_field{
+  width: 760px;
+  border: none;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.popup_map{
+  width: 960px;
+  height: 559px;
+  box-shadow: 0px 10px 20px 0 rgba(4,6,6,0.2);
+}
+.popup_map img{
+  width:100%;
+}
+
 /*Index - interactive links*/
 .catalog_page .main_header_logo:hover{
   color:#666666;
@@ -421,7 +491,7 @@ html,body{
 }
 .main_header{
   margin-top: -50px;
-  margin-bottom: 480px;
+  /*margin-bottom: 480px;*/
   padding-top: 42px; /*по макету внутренний отступ 50px*/
 }
 .user_navigation{
