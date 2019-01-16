@@ -76,6 +76,98 @@ ul{
   margin-top: 5px; /*подбор PP, в макете верхний отступ 20px*/
   margin-left: 57px; /*подбор PP, в макете 59-60*/
 }
+.user_navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 37px;
+}
+.user_navigation form{
+  width:540px;
+}
+.auth_navigation{
+  width: 280px;
+  margin: 0;
+}
+.user_actions_navigation{
+  width: 220px;
+  margin: 0;
+}
+.user_actions_navigation>li{
+    display: inline-block;
+}
+.user_navigation .search_icon,
+.auth_navigation .login_link,
+.user_actions_navigation .compare_link,
+.user_actions_navigation .cart_link{
+  position: relative;
+}
+.user_navigation .search_icon::before{
+  content: "";
+  background-image: url(../img/search.svg);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top:17px;
+  left:3px;
+}
+.user_navigation .search_field{
+  border: none;
+  background-color: transparent;
+  width: 355px;
+  padding-left: 39px;
+}
+.user_navigation .search_field[placeholder]{
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.user_navigation .search_field:hover > .search_field[placeholder]{
+  color: rgba(0, 0, 0, 0.6);
+}
+.user_navigation .search_button{
+  background-color: transparent;
+  border: 2px solid #000000;
+  width: 85px;
+  height: 49px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 0.15px;
+  text-align: center;
+}
+.auth_navigation .login_link::before{
+  content: "";
+  background-image: url(../img/user.svg);
+  width: 13px;
+  height: 12px;
+  position: absolute;
+  top:10px;
+  left:-27px;
+}
+.user_actions_navigation .compare_link::before{
+  content: "";
+  background-image: url(../img/compare.svg);
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top:10px;
+  left:-20px;
+}
+.user_actions_navigation .cart_link::before{
+  content: "";
+  background-image: url(../img/cart.svg);
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top:10px;
+  left:-22px;
+}
+
 .site_navigation a,
 .services_navigation a{ /*свойства общие для заголовков меню верхнего уровня*/
   font-family: 'gilroyextrabold', Arial, sans-serif;
@@ -596,26 +688,7 @@ html,body{
   /*margin-bottom: 480px;*/
   padding-top: 42px; /*по макету внутренний отступ 50px*/
 }
-.user_navigation{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 37px;
-}
-.user_navigation form{
-  width:540px;
-}
-.auth_navigation{
-  width: 280px;
-  margin: 0;
-}
-.user_actions_navigation{
-  width: 220px;
-  margin: 0;
-}
-.user_actions_navigation>li{
-    display: inline-block;
-}
+
 
 .site_navigation>ul{
   display: flex;
@@ -702,18 +775,3 @@ html,body{
   display: inline-block;
 }
 /*Decoration*/
-.auth_navigation .login_link{
-  padding-left: 27px;
-  position: relative;
-}
-.auth_navigation .login_link::before{
-  content: "";
-  width: 13px;
-  height: 12px;
-  position: absolute;
-  top:9px;
-  left:0px;
-  background-image: url(../img/user.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
