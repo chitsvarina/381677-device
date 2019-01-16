@@ -192,11 +192,16 @@ ul{
   color: #000000;
   margin: 0;
 }
-/*.popular_items_list>li{
+.popular_items_list{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 84px;
+}
+.popular_items_list>li{
+  position: relative;
   width: 160px;
-  height: 160px;
-  background-color:rgba(240, 197, 46, 0.5);
-}*/
+}
 .popular_items_list h3,
 .feedback_form label{
   font-family: 'gilroyextrabold', Arial, sans-serif;
@@ -207,19 +212,77 @@ ul{
   text-align: left;
   color: #000000;
 }
-/*.delivery p,   будут наследоваться от body
-.warranty p,
-.credit p,
-.info p,
-.contacts p{
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 300;
-  letter-spacing: 0.15px;
-  text-align: left;
-  color: #464646;
-}*/
+.popular_items_list>li::before{
+  content: "";
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-color: #f0c52e;
+  opacity: 0.5;
+}
+.popular_items_list>li:hover > .popular_items_list>li::before{
+  opacity: 1;
+}
+.popular_items_list .vr::after{
+  content: "";
+  display: block;
+  width: 97px;
+  height: 55px;
+  background-image: url(../img/popular-1.svg);
+  position: absolute;
+  top:52px;
+  left:31px;
+}
+.popular_items_list .monopod::after{
+  content: "";
+  display: block;
+  width: 86px;
+  height: 117px;
+  background-image: url(../img/popular-2.svg);
+  position: absolute;
+  top:41px;
+  left:38px;
+}
+.popular_items_list .camera::after{
+  content: "";
+  display: block;
+  width: 71px;
+  height: 87px;
+  background-image: url(../img/popular-3.svg);
+  position: absolute;
+  top:38px;
+  left:49px;
+}
+.popular_items_list .bracelet::after{
+  content: "";
+  display: block;
+  width: 107px;
+  height: 65px;
+  background-image: url(../img/popular-4.svg);
+  position: absolute;
+  top:50px;
+  left:28px;
+}
+.popular_items_list .watch::after{
+  content: "";
+  display: block;
+  width: 56px;
+  height: 98px;
+  background-image: url(../img/popular-5.svg);
+  position: absolute;
+  top:32px;
+  left:55px;
+}
+.popular_items_list .drone::after{
+  content: "";
+  display: block;
+  width: 132px;
+  height: 69px;
+  background-image: url(../img/popular-6.svg);
+  position: absolute;
+  top:49px;
+  left:13px;
+}
 .services{
   min-height: 388px;
   background-image: linear-gradient(to bottom, transparent 100px, #e5e5e5 100px);
@@ -569,16 +632,8 @@ html,body{
 .site_navigation_contacts{
   width: 120px;
 }
-.popular_items_list{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 84px;
-}
-.popular_item{
-  width: 160px;
-  height: 90px;
-}
+
+
 .services_container{
   display: flex;
 }
