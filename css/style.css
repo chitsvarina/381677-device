@@ -81,9 +81,11 @@ ul{
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 37px;
+  height: 49px;
 }
 .user_navigation form{
   width:540px;
+
 }
 .auth_navigation{
   width: 280px;
@@ -115,6 +117,9 @@ ul{
   border: none;
   background-color: transparent;
   width: 355px;
+  height: 47px;
+  box-sizing: content-box;
+  padding: 0;
   padding-left: 39px;
 }
 .user_navigation .search_field[placeholder]{
@@ -128,6 +133,15 @@ ul{
 .user_navigation .search_field:hover > .search_field[placeholder]{
   color: rgba(0, 0, 0, 0.6);
 }
+.user_navigation .search_field:active,
+.user_navigation .search_field:focus{
+  border-bottom: 2px solid #000000;
+  color: rgb(0, 0, 0);
+}
+.user_navigation .search_field:active,
+.user_navigation .search_field:focus + .user_navigation .search_button{
+  opacity: 1;
+}
 .user_navigation .search_button{
   background-color: transparent;
   border: 2px solid #000000;
@@ -139,7 +153,9 @@ ul{
   font-weight: 300;
   letter-spacing: 0.15px;
   text-align: center;
+  opacity: 0;
 }
+
 .auth_navigation .login_link::before{
   content: "";
   background-image: url(../img/user.svg);
