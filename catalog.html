@@ -63,54 +63,54 @@
         </nav>
     </div>
     <section class="catalog_content">
-      <div class="container">
         <section class="filter">
-          <h2 class="filter_title">Фильтр:</h2>
-          <form class="set_filter" method="post">
-            <fieldset>
-              <legend>Стоимость</legend>
-              <input type="range" min="0" max="180" step="20"/>
-            </fieldset>
-            <fieldset>
-              <legend>Цвет</legend>
-              <ul>
-                <li class="filter_option">
-                  <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_black" id="filter_black">
-                  <label for="filter_black">Черный</label>
-                </li>
-                <li class="filter_option">
-                  <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_white" id="filter_white">
-                  <label for="filter_white">Белый</label>
-                </li>
-                <li class="filter_option">
-                  <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_blue" id="filter_blue">
-                  <label for="filter_blue">Синий</label>
-                </li>
-                <li class="filter_option">
-                  <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_red" id="filter_red">
-                  <label for="filter_red">Красный</label>
-                </li>
-                <li class="filter_option">
-                  <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_pink" id="filter_pink">
-                  <label for="filter_pink">Розовый</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Bluetooth</legend>
-              <ul>
-                <li class="filter_option">
-                  <input class="filter_input_radio visibility_hidden" type="radio" name="filter_yes" id="filter_yes">
-                  <label for="filter_yes">Есть</label>
-                </li>
-                <li class="filter_option">
-                  <input class="filter_input_radio visibility_hidden" type="radio" name="filter_no" id="filter_no">
-                  <label for="filter_no">Нет</label>
-                </li>
-              </ul>
-            </fieldset>
-            <button type="submit" class="filter_button button">Показать</button>
-          </form>
+          <div class="filter_container">
+            <h2 class="filter_title">Фильтр:</h2>
+            <form class="set_filter" method="post">
+              <fieldset>
+                <legend>Стоимость</legend>
+                <input type="range" min="0" max="180" step="20"/>
+              </fieldset>
+              <fieldset>
+                <legend>Цвет</legend>
+                <ul>
+                  <li class="filter_option">
+                    <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_black" id="filter_black">
+                    <label for="filter_black">Черный</label>
+                  </li>
+                  <li class="filter_option">
+                    <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_white" id="filter_white">
+                    <label for="filter_white">Белый</label>
+                  </li>
+                  <li class="filter_option">
+                    <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_blue" id="filter_blue">
+                    <label for="filter_blue">Синий</label>
+                  </li>
+                  <li class="filter_option">
+                    <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_red" id="filter_red">
+                    <label for="filter_red">Красный</label>
+                  </li>
+                  <li class="filter_option">
+                    <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_pink" id="filter_pink">
+                    <label for="filter_pink">Розовый</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend>Bluetooth</legend>
+                <ul>
+                  <li class="filter_option">
+                    <input class="filter_input_radio visibility_hidden" type="radio" name="filter_yes" id="filter_yes">
+                    <label for="filter_yes">Есть</label>
+                  </li>
+                  <li class="filter_option">
+                    <input class="filter_input_radio visibility_hidden" type="radio" name="filter_no" id="filter_no">
+                    <label for="filter_no">Нет</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button type="submit" class="filter_button button">Показать</button>
+            </form>
         </section>
         <section class="catalog">
           <h2 class="visibility_hidden">Список товаров</h2>
@@ -165,7 +165,7 @@
             </ul>
             <a class="next_page" href="#">Вперед</a>
           </nav>
-      </section>
+        </section>
       </div>
     </section>
   </main>

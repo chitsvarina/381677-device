@@ -675,17 +675,21 @@ ul{
   left: -22px;
 }
 .catalog_content{
-  background: linear-gradient(to right, #595959 50%, #efefef 50%);
+/*  background: linear-gradient(to right, #eeeeee 50%, #efefef 50%);*/
+display: flex;
 }
-.catalog_content .container{
+/*.catalog_content .container{
   display: flex;
+}*/
+.filter_container{
+  background-image: linear-gradient(to bottom, #eeeeee 70px, #efefef 70px);
 }
 .filter{
   width: 328px;
   min-height: 1287px;
   padding-left: 60px;
   padding-right: 67px;
-  background: linear-gradient(to bottom, #eeeeee 70px, #efefef 70px);
+/*  background: linear-gradient(to bottom, #eeeeee 70px, #efefef 70px);*/
 }
 .catalog{
   width: 832px;
