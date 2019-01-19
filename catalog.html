@@ -60,37 +60,38 @@
             <li class="catalog_link"><a href="#">Каталог товаров</a></li>
             <li class="monopods_link"><a>Моноподы для селфи</a></li>
           </ul>
-        </nav>
+      </nav>
     </div>
-    <section class="catalog_content">
-        <section class="filter">
-          <div class="filter_container">
+    <div class="heading_style"></div>
+      <div class="catalog">
+        <div class="container">
+          <section class="catalog_filters">
             <h2 class="filter_title">Фильтр:</h2>
             <form class="set_filter" method="post">
               <fieldset>
                 <legend>Стоимость</legend>
-                <input type="range" min="0" max="180" step="20"/>
+                <input  class="set_price" type="range" min="0" max="180" step="20"/>
               </fieldset>
               <fieldset>
                 <legend>Цвет</legend>
-                <ul>
-                  <li class="filter_option">
+                <ul class="filter_color">
+                  <li class="filter_color_option">
                     <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_black" id="filter_black">
                     <label for="filter_black">Черный</label>
                   </li>
-                  <li class="filter_option">
+                  <li class="filter_color_option">
                     <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_white" id="filter_white">
                     <label for="filter_white">Белый</label>
                   </li>
-                  <li class="filter_option">
+                  <li class="filter_color_option">
                     <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_blue" id="filter_blue">
                     <label for="filter_blue">Синий</label>
                   </li>
-                  <li class="filter_option">
+                  <li class="filter_color_option">
                     <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_red" id="filter_red">
                     <label for="filter_red">Красный</label>
                   </li>
-                  <li class="filter_option">
+                  <li class="filter_color_option">
                     <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_pink" id="filter_pink">
                     <label for="filter_pink">Розовый</label>
                   </li>
@@ -98,76 +99,80 @@
               </fieldset>
               <fieldset>
                 <legend>Bluetooth</legend>
-                <ul>
-                  <li class="filter_option">
-                    <input class="filter_input_radio visibility_hidden" type="radio" name="filter_yes" id="filter_yes">
-                    <label for="filter_yes">Есть</label>
-                  </li>
-                  <li class="filter_option">
-                    <input class="filter_input_radio visibility_hidden" type="radio" name="filter_no" id="filter_no">
-                    <label for="filter_no">Нет</label>
-                  </li>
-                </ul>
+                  <ul class="filter_bluetooth">
+                    <li class="filter_bluetooth_option">
+                      <input class="filter_input_radio visibility_hidden" type="radio" name="filter_bluetooth" id="filter_yes">
+                      <label for="filter_yes">Есть</label>
+                    </li>
+                    <li class="filter_bluetooth_option">
+                      <input class="filter_input_radio visibility_hidden" type="radio" name="filter_bluetooth" id="filter_no">
+                      <label for="filter_no">Нет</label>
+                    </li>
+                  </ul>
               </fieldset>
               <button type="submit" class="filter_button button">Показать</button>
             </form>
-        </section>
-        <section class="catalog">
-          <h2 class="visibility_hidden">Список товаров</h2>
-          <div class="catalog_heading">
-            <p class="sort_title">Сортировка:</p>
-            <ul class="sort_by">
-              <li><a href="#" class="active_status">По цене</a></li>
-              <li><a href="#">По типу</a></li>
-              <li><a href="#">По популярности</a></li>
-            </ul>
-            <ul class="sort_up_down">
-              <li><a href="#" aria-label="Сортировать по возрастанию"></a></li>
-              <li><a href="#" aria-label="Сортировать по убыванию"></a></li>
-            </ul>
-          </div>
-          <ul class="catalog_items">
-              <li class="item"  tabindex="0">
-                <img src="img/item-1-jpg.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                <a href="#"><h3>Любительская селфи-палка</h3></a>
-                <span class="item_price" tabindex="0">500 pуб.</span>
-                <a href="#" class="item_to_cart">В корзину</a>
-                <a href="#" class="item_to_compare">Добавить к сравнению</a>
-              </li>
-              <li class="item"  tabindex="0">
-                <img src="img/item-2-jpg.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-                <a href="#"><h3>Профессиональная селфи-палка</h3></a>
-                <span class="item_price" tabindex="0">1500 pуб.</span>
-                <a href="#" class="item_to_cart">В корзину</a>
-                <a href="#" class="item_to_compare">Добавить к сравнению</a>
-              </li>
-              <li class="item"  tabindex="0">
-                <img src="img/item-3-jpg.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                <a href="#"><h3>Непотопляемая селфи-палка</h3></a>
-                <span class="item_price" tabindex="0">2500 pуб.</span>
-                <a href="#" class="item_to_cart">В корзину</a>
-                <a href="#" class="item_to_compare">Добавить к сравнению</a>
-              </li>
-              <li class="item item-new"  tabindex="0">
-                <img src="img/item-4-jpg.jpg" width="360" height="380" alt="Селфи-палка следуй за мной">
-                <a href="#"><h3>Селфи-палка следуй за мной</h3></a>
-                <span class="item_price" tabindex="0">4900 pуб.</span>
-                <a href="#" class="item_to_cart">В корзину</a>
-                <a href="#" class="item_to_compare">Добавить к сравнению</a>
-              </li>
-          </ul>
-          <nav class="catalog_veiw_navigation">
-            <a class="prev_page" href="#">Назад</a>
-            <ul class="catalog_veiw_pages">
-              <li><a class="active_page">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-            </ul>
-            <a class="next_page" href="#">Вперед</a>
-          </nav>
-        </section>
+          </section>
+
+          <section class="catalog_content">
+            <section class="catalog_content_sort">
+              <p class="sort_title">Сортировка:</p>
+              <ul class="sort_by">
+                <li><a href="#" class="active_status">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По популярности</a></li>
+              </ul>
+              <ul class="sort_up_down">
+                <li><a href="#" aria-label="Сортировать по возрастанию"></a></li>
+                <li><a href="#" aria-label="Сортировать по убыванию"></a></li>
+              </ul>
+            </section>
+            <section class="catalog_content_list">
+              <h2 class="visibility_hidden">Список товаров</h2>
+              <ul class="items">
+                  <li class="item"  tabindex="0">
+                    <img src="img/item-1-jpg.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                    <a href="#"><h3>Любительская селфи-палка</h3></a>
+                    <span class="item_price" tabindex="0">500 pуб.</span>
+                    <a href="#" class="item_to_cart">В корзину</a>
+                    <a href="#" class="item_to_compare">Добавить к сравнению</a>
+                  </li>
+                  <li class="item"  tabindex="0">
+                    <img src="img/item-2-jpg.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                    <a href="#"><h3>Профессиональная селфи-палка</h3></a>
+                    <span class="item_price" tabindex="0">1500 pуб.</span>
+                    <a href="#" class="item_to_cart">В корзину</a>
+                    <a href="#" class="item_to_compare">Добавить к сравнению</a>
+                  </li>
+                  <li class="item"  tabindex="0">
+                    <img src="img/item-3-jpg.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                    <a href="#"><h3>Непотопляемая селфи-палка</h3></a>
+                    <span class="item_price" tabindex="0">2500 pуб.</span>
+                    <a href="#" class="item_to_cart">В корзину</a>
+                    <a href="#" class="item_to_compare">Добавить к сравнению</a>
+                  </li>
+                  <li class="item item-new"  tabindex="0">
+                    <img src="img/item-4-jpg.jpg" width="360" height="380" alt="Селфи-палка следуй за мной">
+                    <a href="#"><h3>Селфи-палка следуй за мной</h3></a>
+                    <span class="item_price" tabindex="0">4900 pуб.</span>
+                    <a href="#" class="item_to_cart">В корзину</a>
+                    <a href="#" class="item_to_compare">Добавить к сравнению</a>
+                  </li>
+              </ul>
+              <nav class="catalog_veiw_navigation">
+                <a class="prev_page" href="#">Назад</a>
+                <ul class="catalog_veiw_pages">
+                  <li><a class="active_page">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                </ul>
+                <a class="next_page" href="#">Вперед</a>
+              </nav>
+            </section>
+          </section>
+        </div>
       </div>
-    </section>
+
   </main>
 </div>
   <footer class="main_footer">
