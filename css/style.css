@@ -174,12 +174,35 @@ ul{
 }
 .auth_navigation .login_link::before{
   content: "";
-  background-image: url(../img/user.svg);
   width: 13px;
   height: 12px;
   position: absolute;
   top:10px;
   left:0px;
+}
+.auth_navigation a:visited,
+.user_actions_navigation a:visited,
+.site_navigation a:visited{
+  color:#000000;
+}
+.auth_navigation a:hover,
+.user_actions_navigation a:hover,
+.site_navigation a:hover{
+  color:rgba(0, 0, 0, 0.6);
+}
+.auth_navigation a:focus,
+.auth_navigation a:active,
+.user_actions_navigation a:focus,
+.user_actions_navigation a:active,
+.site_navigation a:focus,
+.site_navigation a:active{
+  color:rgba(0, 0, 0, 0.3);
+}
+.main_header .login_link::before{
+  background-image: url(../img/user.svg);
+}
+.main_footer .login_link::before{
+  background-image: url(../img/user_2.svg);
 }
 .user_actions_navigation .compare_link{
   width: 130px;
@@ -187,12 +210,17 @@ ul{
 }
 .user_actions_navigation .compare_link::before{
   content: "";
-  background-image: url(../img/compare.svg);
   width: 10px;
   height: 10px;
   position: absolute;
   top:10px;
   left:0px;
+}
+.main_header .compare_link::before{
+  background-image: url(../img/compare.svg);
+}
+.main_footer .compare_link::before{
+  background-image: url(../img/compare_2.svg);
 }
 .user_actions_navigation .cart_link{
   width: 82px;
@@ -207,7 +235,12 @@ ul{
   top:10px;
   left:0px;
 }
-
+.main_header .cart_link::before{
+  background-image: url(../img/cart.svg);
+}
+.main_footer .cart_link::before{
+  background-image: url(../img/cart_2.svg);
+}
 .site_navigation a,
 .services_navigation a{ /*свойства общие для заголовков меню верхнего уровня*/
   font-family: 'gilroyextrabold', Arial, sans-serif;
@@ -673,6 +706,7 @@ ul{
 .services .delivery{
   display: block;
 }
+
 .delivery h2,
 .warranty h2,
 .credit h2{
@@ -699,12 +733,7 @@ ul{
 .credit_description{
   width: 425px;
 }
-.info a{
-  display: block;
-  height: 40px;
-  width: 260px;
-  line-height: 40px;
-}
+
 .delivery_companies li{
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 16px;
@@ -712,6 +741,59 @@ ul{
   letter-spacing: 0.18px;
   text-align: left;
   color: #000000;
+}
+.brands>ul{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 136px;
+}
+.info_container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.info{
+  width: 462px;
+}
+.info h2,
+.contacts h2{
+  margin-bottom: 44px;
+}
+.info p{
+  font-size: 14px;
+  letter-spacing: 0.32px;
+}
+.info .delivery_companies{
+  margin-top: 65px;
+  margin-bottom: 54px;
+}
+.info .delivery_companies>li{
+  padding-left: 36px;
+  position: relative;
+}
+.info .delivery_companies>li::before{
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  border:2px solid #e5e5e5;
+  position: absolute;
+  top: 16px;
+  left: 0;
+}
+.contacts{
+  width: 560px;
+}
+.info .button{
+  width: 260px;
+}
+.contacts>p{
+  margin-bottom: 38px;
+}
+.contacts .button{
+  margin-top: 58px;
+  width: 260px;
 }
 .main_footer{
   min-height: 323px;
@@ -782,30 +864,12 @@ ul{
 
 /*Index - interactive links*/
 
-.auth_navigation a:visited,
-.user_actions_navigation a:visited,
-.site_navigation a:visited{
-  color:#000000;
-}
-.auth_navigation a:hover,
-.user_actions_navigation a:hover,
-.site_navigation a:hover{
-  color:rgba(0, 0, 0, 0.6);
-}
-.auth_navigation a:focus,
-.auth_navigation a:active,
-.user_actions_navigation a:focus,
-.user_actions_navigation a:active,
-.site_navigation a:focus,
-.site_navigation a:active{
-  color:rgba(0, 0, 0, 0.3);
-}
+
 .popular_items_list h3:focus,
 .popular_items_list h3:active{
   color:rgba(0, 0, 0, 0.3);
 }
-.info a{
-}
+
 .main_footer_navigation a:visited{
   color:rgba(255, 255, 255, 0.7);
 }
@@ -1169,22 +1233,8 @@ html,body{
 
 
 
-.brands>ul{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 93px;
-}
-.info_container{
-  display: flex;
-  justify-content: space-between;
-  min-height: 648px;
-}
-.info{
-  width: 460px;
-}
-.contacts{
-  width: 560px;
-}
+
+
 .main_footer .container{
   display: flex;
   justify-content: space-between;

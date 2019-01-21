@@ -120,9 +120,14 @@
         <div class="container">
             <nav class="sub_navigation">
               <ul class="services_navigation">
-                <li class="delivery_link"><a href="#" onclick="show_description();return false" class="button">Доставка</a></li>
+                <!--<li class="delivery_link"><a href="#" onclick="show_description();return false" class="button">Доставка</a></li>
                 <li class="warranty_link"><a href="#" onclick="show_description();return false" class="button">Гарантия</a></li>
                 <li class="credit_link"><a href="#" onclick="show_description();return false" class="button">Кредит</a></li>
+-->
+                <li class="delivery_link"><a href="#" class="button">Доставка</a></li>
+                <li class="warranty_link"><a href="#" class="button">Гарантия</a></li>
+                <li class="credit_link"><a href="#" class="button">Кредит</a></li>
+
               </ul>
             </nav>
             <section class="delivery">
@@ -178,9 +183,10 @@
         <div class="info_container">
           <section class="info">
             <h2>О нас</h2>
-            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. <br>
-                Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими
-                транспортными компаниями:
+            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+            <br><br>
+            Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими
+            транспортными компаниями:
             </p>
             <ul class="delivery_companies">
               <li>Деловые Линии</li>
@@ -194,7 +200,7 @@
             <p>Вы можете забрать товар сами, заехав наш в офис. Заодно, вы можете проверить работоспособность
               покупки. Всякое бывает.
             </p>
-            <a href="https://yandex.ru/maps"><img src="img/map-jpg.jpg" alt="Офис компании по адресу г.Москва, ул.Строителей, д.15"></a>
+            <a href="https://yandex.ru/maps" class="location"><img src="img/map-jpg.jpg" alt="Офис компании по адресу г.Москва, ул.Строителей, д.15"></a>
             <a href="feedback.html" class="button">Напишите нам</a>
           </section>
         </div>
@@ -253,7 +259,7 @@
       <button type="button" class="feedback_close button" aria-label="Закрыть карту"></button>
     </section>
     <script type="text/javascript">
-      function show_description(){
+  /*    function show_description(){
         if(event.target.parentElement.className=="warranty_link"){
           document.getElementsByClassName('delivery')[0].style.display="none";
           document.getElementsByClassName('warranty')[0].style.display="block";
@@ -267,7 +273,7 @@
           document.getElementsByClassName('warranty')[0].style.display="none";
           document.getElementsByClassName('credit')[0].style.display="none";
         }
-      }
+      }*/
     </script>
     <script>
 
