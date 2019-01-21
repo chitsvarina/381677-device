@@ -54,27 +54,53 @@
     <main>
       <div class="container">
         <section class="slider">
-          <input type="radio" id="slide_monopod">
-          <input type="radio" id="slide_watch">
-          <input type="radio" id="slide_drone">
-          <!--<div class="slider_img">-->
-            <img src="img/slider-1-png.png" class="slider_img_monopod" alt="Самая длинная палка для селфи">
-            <!--<img src="img/slider-2-png.png" class="slider_img_bracelet" alt="Мотивирующий фитнес-браслет">
-            <img src="img/slider-3-png.png" class="slider_img_drone" alt="Квадрокоптер, оснащенный мощным лазером">
-          <!--</div>-->
+          <input type="radio" name="slider_controls" id="slide_monopod_control" checked>
+          <input type="radio" name="slider_controls" id="slide_bracelet_control">
+          <input type="radio" name="slider_controls" id="slide_drone_control">
+          <div class="slider_img">
+            <img src="img/slider-1-png.png" class="slide_monopod_img" alt="Самая длинная палка для селфи">
+            <img src="img/slider-2-png.png" class="slide_bracelet_img" alt="Мотивирующий фитнес-браслет">
+            <img src="img/slider-3-png.png" class="slide_drone_img" alt="Квадрокоптер, оснащенный мощным лазером">
+          </div>
           <div class="slider_content">
-            <p class="slogan">Делай селфи, <br> как Бен Стиллер!</p>
-            <p class="description">Самая длинная палка для селфи доступна в нашем магазине.<br>
-              Восемь (Восемь, Карл) метров длиной и весом всего 5 килограмм.</p>
-            <a href="info.html" class="button">Подробнее</a>
-            <table class="features">
-              <tr><td>8,5 м</td><td>5 кг</td><td>Карбон</td></tr>
-              <tr><th>Длина палки</th><th>Вес палки</th><th>Материал</th></tr>
-            </table>
-            <div class="slider_controls">
-              <label for="slide_monopod"></label>
-              <label for="slide_watch"></label>
-              <label for="slide_drone"></label>
+            <div class="slide_monopod_content">
+              <span class="slider_counter">01</span>
+              <p class="slogan">Делай селфи, <br> как Бен Стиллер!</p>
+              <p class="description">Самая длинная палка для селфи доступна в нашем магазине.<br>
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <table class="features">
+                <tr><td>8,5 м</td><td>5 кг</td><td>Карбон</td></tr>
+                <tr><th>Длина палки</th><th>Вес палки</th><th>Материал</th></tr>
+              </table>
+              <span class="slider_counter">01</span>
+            </div>
+
+            <div class="slide_bracelet_content">
+              <span class="slider_counter">02</span>
+              <p class="slogan">Худеем <br> правильно!</p>
+              <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
+                не пропускать занятия и соблюдать диету.</p>
+              <table class="features">
+                <tr><td>48 часов</td></tr>
+                <tr><th>Без подзарядки</th></tr>
+              </table>
+            </div>
+            <div class="slide_drone_content">
+              <span class="slider_counter">03</span>
+              <p class="slogan">Порхает как бабочка, <br> жалит как пчела!</p>
+              <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+                мощным лазером, замаскированным под стандартную камеру.</p>
+              <table class="features">
+                <tr><td>800 м</td><td>50 м</td></tr>
+                <tr><th>Дальность полета</th><th>Радиус поражения</th></tr>
+              </table>
+            </div>
+
+            <a href="#" class="button">Подробнее</a>
+            <div class="slider_controls_visual">
+              <label for="slide_monopod_control" id="slide_monopod_control_visual"></label>
+              <label for="slide_bracelet_control" id="slide_bracelet_control_visual"></label>
+              <label for="slide_drone_control" id="slide_drone_control_visual"></label>
             </div>
           </div>
         </section>
@@ -92,30 +118,28 @@
       </div>
       <section class="services">
         <div class="container">
-          <div class="services_container">
             <nav class="sub_navigation">
               <ul class="services_navigation">
-                <li class="delivery_link"><a href="#" class="button">Доставка</a></li>
-                <li class="warranty_link"><a href="#" class="button">Гарантия</a></li>
-                <li class="credit_link"><a href="#" class="button">Кредит</a></li>
+                <li class="delivery_link"><a href="#" onclick="show_description()" class="button">Доставка</a></li>
+                <li class="warranty_link"><a href="#" onclick="show_description()" class="button">Гарантия</a></li>
+                <li class="credit_link"><a href="#" onclick="show_description()" class="button">Кредит</a></li>
               </ul>
             </nav>
             <section class="delivery">
               <h2>Доставка</h2>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+              <p class="delivery_description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
               совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </section>
-            <section class="warranty hide_it">
+            <section class="warranty">
               <h2>Гарантия</h2>
-              <p>Если из-за возгарания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый.
+              <p class="warranty_description">Если из-за возгарания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый.
                 Товар, не дом, конечно же.</p>
             </section>
-            <section class="credit hide_it">
+            <section class="credit">
               <h2>Кредит</h2>
-              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+              <p class="credit_description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
               условия кредита. Выгодные для нашего банка, разумеется.</p>
             </section>
-          </div>
         </div>
       </section>
       <div class="container">
@@ -228,5 +252,13 @@
       <h2 class="visibility_hidden">Офис компании на карте</h2>
       <button type="button" class="feedback_close button" aria-label="Закрыть карту"></button>
     </section>
+    <script type="text/javascript">
+      function show_description(){
+        document.getElementsByClassName('warranty')[0].display="block";
+      }
+    </script>
+    <script>
+
+    </script>
   </body>
 </html>
