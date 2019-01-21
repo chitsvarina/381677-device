@@ -670,6 +670,9 @@ ul{
   border-left: 7px solid #000000;
   display: none;
 }
+.services .delivery{
+  display: block;
+}
 .delivery h2,
 .warranty h2,
 .credit h2{

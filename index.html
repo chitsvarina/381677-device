@@ -120,9 +120,9 @@
         <div class="container">
             <nav class="sub_navigation">
               <ul class="services_navigation">
-                <li class="delivery_link"><a href="#" onclick="show_description()" class="button">Доставка</a></li>
-                <li class="warranty_link"><a href="#" onclick="show_description()" class="button">Гарантия</a></li>
-                <li class="credit_link"><a href="#" onclick="show_description()" class="button">Кредит</a></li>
+                <li class="delivery_link"><a href="#" onclick="show_description();return false" class="button">Доставка</a></li>
+                <li class="warranty_link"><a href="#" onclick="show_description();return false" class="button">Гарантия</a></li>
+                <li class="credit_link"><a href="#" onclick="show_description();return false" class="button">Кредит</a></li>
               </ul>
             </nav>
             <section class="delivery">
@@ -254,7 +254,19 @@
     </section>
     <script type="text/javascript">
       function show_description(){
-        document.getElementsByClassName('warranty')[0].display="block";
+        if(event.target.parentElement.className=="warranty_link"){
+          document.getElementsByClassName('delivery')[0].style.display="none";
+          document.getElementsByClassName('warranty')[0].style.display="block";
+          document.getElementsByClassName('credit')[0].style.display="none";
+        }else if(event.target.parentElement.className=="credit_link"){
+          document.getElementsByClassName('delivery')[0].style.display="none";
+          document.getElementsByClassName('warranty')[0].style.display="none";
+          document.getElementsByClassName('credit')[0].style.display="block";
+        }else{
+          document.getElementsByClassName('delivery')[0].style.display="block";
+          document.getElementsByClassName('warranty')[0].style.display="none";
+          document.getElementsByClassName('credit')[0].style.display="none";
+        }
       }
     </script>
     <script>
