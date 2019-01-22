@@ -30,12 +30,12 @@
           <ul>
             <li class="site_navigation_catalog"><a href="catalog.html">Каталог товаров</a>
               <div class="site_navigation_submenu">
-                <ul>
+                <ul class="foto_video_gadgets">
                   <li class="vr_link"><a href="#">Виртуальная реальность</a></li>
                   <li class="monopod_link"><a href="catalog.html">Моноподы для селфи</a></li>
                   <li class="camera_link"><a href="#">Экшн-камеры</a></li>
                 </ul>
-                <ul>
+                <ul class="personal_gadgets">
                   <li class="bracelet_link"><a href="#">Фитнес-браслеты</a></li>
                   <li class="watch_link"><a href="#">Умные часы</a></li>
                 </ul>
@@ -108,7 +108,7 @@
           <h2 class="visibility_hidden">Популярные товары</h2>
           <ul class="popular_items_list">
             <li class="vr"><a href="#"><h3>Виртуальная реальность</h3></a></li>
-            <li class="monopod"><a href="catalog.html"><h3>Моноподы для селфи</h3></a></li>
+            <li class="monopod"><a href="catalog.html"><h3>Моноподы для&nbspселфи</h3></a></li>
             <li class="camera"><a href="#"><h3>Экшн-камеры</h3></a></li>
             <li class="bracelet"><a href="#"><h3>Фитнес-браслеты</h3></a></li>
             <li class="watch"><a href="#"><h3>Умные часы</h3></a></li>
@@ -120,13 +120,9 @@
         <div class="container">
             <nav class="sub_navigation">
               <ul class="services_navigation">
-                <!--<li class="delivery_link"><a href="#" onclick="show_description();return false" class="button">Доставка</a></li>
+                <li class="delivery_link"><a href="#" onclick="show_description();return false" class="button focus_button">Доставка</a></li>
                 <li class="warranty_link"><a href="#" onclick="show_description();return false" class="button">Гарантия</a></li>
                 <li class="credit_link"><a href="#" onclick="show_description();return false" class="button">Кредит</a></li>
--->
-                <li class="delivery_link"><a href="#" class="button">Доставка</a></li>
-                <li class="warranty_link"><a href="#" class="button">Гарантия</a></li>
-                <li class="credit_link"><a href="#" class="button">Кредит</a></li>
 
               </ul>
             </nav>
@@ -200,7 +196,7 @@
             <p>Вы можете забрать товар сами, заехав наш в офис. Заодно, вы можете проверить работоспособность
               покупки. Всякое бывает.
             </p>
-            <a href="https://yandex.ru/maps" class="location"><img src="img/map-jpg.jpg" alt="Офис компании по адресу г.Москва, ул.Строителей, д.15"></a>
+            <a href="https://yandex.ru/maps"><img src="img/map-jpg.jpg" alt="Офис компании по адресу г.Москва, ул.Строителей, д.15"></a>
             <a href="feedback.html" class="button">Напишите нам</a>
           </section>
         </div>
@@ -209,7 +205,7 @@
     <footer class="main_footer">
       <div class="container">
         <a class='main_footer_logo'>Device</a>
-        <nav class="main_footer_navigation">
+        <nav class="user_navigation">
           <ul class="auth_navigation">
             <li class="login_link"><a href="#">Войти</a></li>
           </ul>
@@ -218,21 +214,22 @@
             <li class="cart_link"><a href="#">Корзина</a></li>
           </ul>
         </nav>
-        <p class="footer_address">г.Москва, ул.Строителей, 15</p>
-        <nav class="footer_navigation">
-          <ul class="services_navigation">
+        <p class="footer_address">г. Москва, ул. Строителей, 15</p>
+        <nav class="services_navigation">
+          <ul>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Гарантия</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
-        <p class="footer_call">Тел.: +7(495)495-95-95</p>
+        <p class="footer_call">Тел.: +7 (495) 495-95-95</p>
+        <span></span>
         <ul class="footer_social">
-          <li><a href="#" class="social_button" aria-label="Страница интернет-магазина Девайс на Фейсбуке"></a></li>
-          <li><a href="#" class="social_button" aria-label="Профиль интернет-магазина Девайс в Инстаграмм"></a></li>
-          <li><a href="#" class="social_button" aria-label="Страница интернет-магазина Девайс в Твиттере"></a></li>
+          <li><a href="#" class="social_link fb" aria-label="Страница интернет-магазина Девайс на Фейсбуке"></a></li>
+          <li><a href="#" class="social_link instagram" aria-label="Профиль интернет-магазина Девайс в Инстаграмм"></a></li>
+          <li><a href="#" class="social_link twitter" aria-label="Страница интернет-магазина Девайс в Твиттере"></a></li>
         </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HtmlAcademy</a>
+        <a  class="ha_link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Сайт разработчика - HtmlAcademy"></a>
       </div>
     </footer>
     <section class="popup_feedback">
@@ -259,7 +256,8 @@
       <button type="button" class="feedback_close button" aria-label="Закрыть карту"></button>
     </section>
     <script type="text/javascript">
-  /*    function show_description(){
+      document.getElementsByClassName('focus_button')[0].click();
+      function show_description(){
         if(event.target.parentElement.className=="warranty_link"){
           document.getElementsByClassName('delivery')[0].style.display="none";
           document.getElementsByClassName('warranty')[0].style.display="block";
@@ -273,10 +271,7 @@
           document.getElementsByClassName('warranty')[0].style.display="none";
           document.getElementsByClassName('credit')[0].style.display="none";
         }
-      }*/
-    </script>
-    <script>
-
+      }
     </script>
   </body>
 </html>
