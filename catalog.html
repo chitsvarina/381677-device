@@ -70,13 +70,18 @@
             <form class="set_filter" method="post">
               <fieldset>
                 <legend>Стоимость</legend>
-                <input  class="set_price" type="range" min="0" max="180" step="20"/>
+                <!--<input  class="set_price" type="range" min="0" max="180" step="20"/>-->
+                <div class="set_price">
+                  <div class="strip"></div>
+                  <span class="pointer_from">от 0</span>
+                  <span class="pointer_to">до 5000</span>
+                </div>
               </fieldset>
               <fieldset>
                 <legend>Цвет</legend>
                 <ul class="filter_color">
                   <li class="filter_color_option">
-                    <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_black" id="filter_black">
+                    <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_black" id="filter_black" checked>
                     <label for="filter_black">Черный</label>
                   </li>
                   <li class="filter_color_option">
@@ -84,11 +89,11 @@
                     <label for="filter_white">Белый</label>
                   </li>
                   <li class="filter_color_option">
-                    <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_blue" id="filter_blue">
+                    <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_blue" id="filter_blue" checked>
                     <label for="filter_blue">Синий</label>
                   </li>
                   <li class="filter_color_option">
-                    <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_red" id="filter_red">
+                    <input class="filter_input_checkbox visibility_hidden" type="checkbox" name="filter_red" id="filter_red" checked>
                     <label for="filter_red">Красный</label>
                   </li>
                   <li class="filter_color_option">
@@ -101,7 +106,7 @@
                 <legend>Bluetooth</legend>
                   <ul class="filter_bluetooth">
                     <li class="filter_bluetooth_option">
-                      <input class="filter_input_radio visibility_hidden" type="radio" name="filter_bluetooth" id="filter_yes">
+                      <input class="filter_input_radio visibility_hidden" type="radio" name="filter_bluetooth" id="filter_yes" checked>
                       <label for="filter_yes">Есть</label>
                     </li>
                     <li class="filter_bluetooth_option">
@@ -110,7 +115,7 @@
                     </li>
                   </ul>
               </fieldset>
-              <button type="submit" class="filter_button button">Показать</button>
+              <button type="submit" class="button">Показать</button>
             </form>
           </section>
 
@@ -123,8 +128,8 @@
                 <li><a href="#">По популярности</a></li>
               </ul>
               <ul class="sort_up_down">
-                <li><a href="#" aria-label="Сортировать по возрастанию"></a></li>
-                <li><a href="#" aria-label="Сортировать по убыванию"></a></li>
+                <li><a href="#" class="sort_up" aria-label="Сортировать по возрастанию"></a></li>
+                <li><a href="#" class="sort_down" aria-label="Сортировать по убыванию"></a></li>
               </ul>
             </section>
             <section class="catalog_content_list">
@@ -134,28 +139,28 @@
                     <img src="img/item-1-jpg.jpg" width="360" height="380" alt="Любительская селфи-палка">
                     <a href="#"><h3>Любительская селфи-палка</h3></a>
                     <span class="item_price" tabindex="0">500 pуб.</span>
-                    <a href="#" class="item_to_cart">В корзину</a>
+                    <a href="#" class="item_to_cart button">В корзину</a>
                     <a href="#" class="item_to_compare">Добавить к сравнению</a>
                   </li>
                   <li class="item"  tabindex="0">
                     <img src="img/item-2-jpg.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                     <a href="#"><h3>Профессиональная селфи-палка</h3></a>
                     <span class="item_price" tabindex="0">1500 pуб.</span>
-                    <a href="#" class="item_to_cart">В корзину</a>
+                    <a href="#" class="item_to_cart button">В корзину</a>
                     <a href="#" class="item_to_compare">Добавить к сравнению</a>
                   </li>
                   <li class="item"  tabindex="0">
                     <img src="img/item-3-jpg.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                     <a href="#"><h3>Непотопляемая селфи-палка</h3></a>
                     <span class="item_price" tabindex="0">2500 pуб.</span>
-                    <a href="#" class="item_to_cart">В корзину</a>
+                    <a href="#" class="item_to_cart button">В корзину</a>
                     <a href="#" class="item_to_compare">Добавить к сравнению</a>
                   </li>
                   <li class="item item-new"  tabindex="0">
                     <img src="img/item-4-jpg.jpg" width="360" height="380" alt="Селфи-палка следуй за мной">
                     <a href="#"><h3>Селфи-палка следуй за мной</h3></a>
                     <span class="item_price" tabindex="0">4900 pуб.</span>
-                    <a href="#" class="item_to_cart">В корзину</a>
+                    <a href="#" class="item_to_cart button">В корзину</a>
                     <a href="#" class="item_to_compare">Добавить к сравнению</a>
                   </li>
               </ul>
