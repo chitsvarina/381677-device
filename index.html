@@ -57,46 +57,54 @@
           <input type="radio" name="slider_controls" id="slide_monopod_control" checked>
           <input type="radio" name="slider_controls" id="slide_bracelet_control">
           <input type="radio" name="slider_controls" id="slide_drone_control">
-          <div class="slider_img">
-            <img src="img/slider-1-png.png" class="slide_monopod_img" alt="Самая длинная палка для селфи">
-            <img src="img/slider-2-png.png" class="slide_bracelet_img" alt="Мотивирующий фитнес-браслет">
-            <img src="img/slider-3-png.png" class="slide_drone_img" alt="Квадрокоптер, оснащенный мощным лазером">
-          </div>
+          <!--<div class="slider_img">
+          </div>-->
           <div class="slider_content">
-            <div class="slide_monopod_content">
-              <span class="slider_counter">01</span>
-              <p class="slogan">Делай селфи, <br> как Бен Стиллер!</p>
-              <p class="description">Самая длинная палка для селфи доступна в нашем магазине.<br>
-                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <table class="features">
-                <tr><td>8,5 м</td><td>5 кг</td><td>Карбон</td></tr>
-                <tr><th>Длина палки</th><th>Вес палки</th><th>Материал</th></tr>
-              </table>
-              <span class="slider_counter">01</span>
+            <div class="slide_monopod">
+              <img src="img/slider-1-png.png" class="slide_monopod_img" alt="Самая длинная палка для селфи">
+              <div class="slide_monopod_content">
+                <span class="slider_counter">01</span>
+                <p class="slogan">Делай селфи, <br> как Бен Стиллер!</p>
+                <p class="description">Самая длинная палка для селфи доступна в нашем магазине.<br>
+                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                <a href="#" class="button">Подробнее</a>
+                <table class="features">
+                  <tr><td>8,5 м</td><td>5 кг</td><td>Карбон</td></tr>
+                  <tr><th>Длина палки</th><th>Вес палки</th><th>Материал</th></tr>
+                </table>
+              </div>
             </div>
 
-            <div class="slide_bracelet_content">
-              <span class="slider_counter">02</span>
-              <p class="slogan">Худеем <br> правильно!</p>
-              <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
-                не пропускать занятия и соблюдать диету.</p>
-              <table class="features">
-                <tr><td>48 часов</td></tr>
-                <tr><th>Без подзарядки</th></tr>
-              </table>
+            <div class="slide_bracelet">
+              <img src="img/slider-2-png.png" class="slide_bracelet_img" alt="Мотивирующий фитнес-браслет">
+              <div class="slide_bracelet_content">
+                <span class="slider_counter">02</span>
+                <p class="slogan">Худеем <br> правильно!</p>
+                <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
+                  не пропускать занятия и соблюдать диету.</p>
+                <a href="#" class="button">Подробнее</a>
+                <table class="features">
+                  <tr><td>48 часов</td></tr>
+                  <tr><th>Без подзарядки</th></tr>
+                </table>
+              </div>
             </div>
-            <div class="slide_drone_content">
+
+            <div class="slide_drone">
+              <img src="img/slider-3-png.png" class="slide_drone_img" alt="Квадрокоптер, оснащенный мощным лазером">
               <span class="slider_counter">03</span>
-              <p class="slogan">Порхает как бабочка, <br> жалит как пчела!</p>
-              <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
-                мощным лазером, замаскированным под стандартную камеру.</p>
-              <table class="features">
-                <tr><td>800 м</td><td>50 м</td></tr>
-                <tr><th>Дальность полета</th><th>Радиус поражения</th></tr>
-              </table>
+                <div class="slide_drone_content">
+                  <p class="slogan">Порхает как бабочка, <br> жалит как пчела!</p>
+                  <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+                    мощным лазером, замаскированным под стандартную камеру.</p>
+                  <a href="#" class="button">Подробнее</a>
+                  <table class="features">
+                    <tr><td>800 м</td><td>50 м</td></tr>
+                    <tr><th>Дальность полета</th><th>Радиус поражения</th></tr>
+                  </table>
+                </div>
             </div>
 
-            <a href="#" class="button">Подробнее</a>
             <div class="slider_controls_visual">
               <label for="slide_monopod_control" id="slide_monopod_control_visual"></label>
               <label for="slide_bracelet_control" id="slide_bracelet_control_visual"></label>
@@ -196,8 +204,8 @@
             <p>Вы можете забрать товар сами, заехав наш в офис. Заодно, вы можете проверить работоспособность
               покупки. Всякое бывает.
             </p>
-            <a href="https://yandex.ru/maps"><img src="img/map-jpg.jpg" alt="Офис компании по адресу г.Москва, ул.Строителей, д.15"></a>
-            <a href="feedback.html" class="button">Напишите нам</a>
+            <a href="https://yandex.ru/maps/"><img src="img/map-jpg.jpg" alt="Офис компании по адресу г.Москва, ул.Строителей, д.15"></a>
+            <a href="feedback.html" class="button show_feedback">Напишите нам</a>
           </section>
         </div>
       </div>
@@ -232,7 +240,7 @@
         <a  class="ha_link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Сайт разработчика - HtmlAcademy"></a>
       </div>
     </footer>
-    <section class="popup_feedback">
+    <section class="popup feedback">
       <h2 class="visibility_hidden">Форма обратной связи</h2>
       <form method="post" class="feedback_form">
         <p class="user_name_group">
@@ -251,7 +259,7 @@
       </form>
       <button type="button" class="close_button" aria-label="Закрыть форму обратной связи"></button>
     </section>
-    <section class="popup_map">
+    <section class="popup map">
       <h2 class="visibility_hidden">Офис компании на карте</h2>
       <button type="button" class="close_button" aria-label="Закрыть карту"></button>
     </section>
@@ -272,6 +280,20 @@
           document.getElementsByClassName('credit')[0].style.display="none";
         }
       }
+      var form_link=document.querySelector(".show_feedback");
+      var form_popup=document.querySelector(".feedback");
+      var form_close=form_popup.querySelector(".close_button");
+
+      form_link.addEventListener("click", function(evt){
+        evt.preventDefault();
+        form_popup.classList.add("show_popup");
+      });
+
+      form_close.addEventListener("click", function(evt){
+        evt.preventDefault();
+        form_popup.classList.remove("show_popup");
+      });
+
     </script>
   </body>
 </html>
